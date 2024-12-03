@@ -8,30 +8,30 @@ of op een andere wijze zijn bereidheid te kennen heeft gegeven krachtens de EUPL
 
 ## 1. Definities
 
-In deze licentie wordt verstaan onder: 
+In deze licentie wordt verstaan onder:
 
-* „de licentie”:de onderhavige licentie; 
-* „het oorspronkelijke werk”:het werk dat of de software die door de licentiegever krachtens deze licentie wordt verspreid of medegedeeld, en dat/die beschikbaar is als broncode en, in voorkomend geval, ook als uitvoerbare code; 
-* „bewerkingen”:de werken of software die de licentiehouder kan creëren op grond van het oorspronkelijke werk of wijzigingen ervan. In deze licentie wordt niet gedefinieerd welke mate van wijziging of afhankelijkheid van het oorspronkelijke werk vereist is om een werk als een bewerking te kunnen aanmerken; dat wordt bepaald conform het auteursrecht dat van toepassing is in de in artikel 15 bedoelde staat; 
-* „het werk”:het oorspronkelijke werk of de bewerkingen ervan; 
-* „de broncode”:de voor mensen leesbare vorm van het werk, die het gemakkelijkste door mensen kan worden bestudeerd en gewijzigd; 
-* „de uitvoerbare code”:elke code die over het algemeen is gecompileerd en is bedoeld om door een computer als een programma te worden uitgevoerd; 
-* „de licentiegever”:de natuurlijke of rechtspersoon die het werk krachtens de licentie verspreidt of mededeelt; 
-* „bewerker(s)”:elke natuurlijke of rechtspersoon die het werk krachtens de licentie wijzigt of op een andere wijze bijdraagt tot de totstandkoming van een bewerking; 
-* „de licentiehouder” of „u”:elke natuurlijke of rechtspersoon die het werk onder de voorwaarden van de licentie gebruikt;
-* „verspreiding” of „mededeling”:het verkopen, geven, uitlenen, verhuren, verspreiden, mededelen, doorgeven, of op een andere wijze online of offline beschikbaar stellen van kopieën van het werk of het verlenen van toegang tot de essentiële functies ervan ten behoeve van andere natuurlijke of rechtspersonen.
+- „de licentie”:de onderhavige licentie;
+- „het oorspronkelijke werk”:het werk dat of de software die door de licentiegever krachtens deze licentie wordt verspreid of medegedeeld, en dat/die beschikbaar is als broncode en, in voorkomend geval, ook als uitvoerbare code;
+- „bewerkingen”:de werken of software die de licentiehouder kan creëren op grond van het oorspronkelijke werk of wijzigingen ervan. In deze licentie wordt niet gedefinieerd welke mate van wijziging of afhankelijkheid van het oorspronkelijke werk vereist is om een werk als een bewerking te kunnen aanmerken; dat wordt bepaald conform het auteursrecht dat van toepassing is in de in artikel 15 bedoelde staat;
+- „het werk”:het oorspronkelijke werk of de bewerkingen ervan;
+- „de broncode”:de voor mensen leesbare vorm van het werk, die het gemakkelijkste door mensen kan worden bestudeerd en gewijzigd;
+- „de uitvoerbare code”:elke code die over het algemeen is gecompileerd en is bedoeld om door een computer als een programma te worden uitgevoerd;
+- „de licentiegever”:de natuurlijke of rechtspersoon die het werk krachtens de licentie verspreidt of mededeelt;
+- „bewerker(s)”:elke natuurlijke of rechtspersoon die het werk krachtens de licentie wijzigt of op een andere wijze bijdraagt tot de totstandkoming van een bewerking;
+- „de licentiehouder” of „u”:elke natuurlijke of rechtspersoon die het werk onder de voorwaarden van de licentie gebruikt;
+- „verspreiding” of „mededeling”:het verkopen, geven, uitlenen, verhuren, verspreiden, mededelen, doorgeven, of op een andere wijze online of offline beschikbaar stellen van kopieën van het werk of het verlenen van toegang tot de essentiële functies ervan ten behoeve van andere natuurlijke of rechtspersonen.
 
 ## 2. Draagwijdte van de uit hoofde van de licentie verleende rechten
 
 De licentiegever verleent u hierbij een wereldwijde, royaltyvrije, niet-exclusieve, voor een sublicentie in aanmerking komende licentie, om voor de duur van het aan het oorspronkelijke werk verbonden auteursrecht, het volgende te doen:
 
-* het werk in alle omstandigheden en voor ongeacht welk doel te gebruiken;
-* het werk te verveelvoudigen;
-* het werk te wijzigen en op grond van het werk bewerkingen te ontwikkelen;
-* het werk aan het publiek mede te delen, waaronder het recht om het werk of kopieën ervan aan het publiek ter beschikking te stellen of te vertonen, en het werk, in voorkomend geval, in het openbaar uit te voeren;
-* het werk of kopieën ervan te verspreiden;
-* het werk of kopieën ervan uit te lenen en te verhuren;
-* de rechten op het werk of op kopieën ervan in sublicentie te geven.
+- het werk in alle omstandigheden en voor ongeacht welk doel te gebruiken;
+- het werk te verveelvoudigen;
+- het werk te wijzigen en op grond van het werk bewerkingen te ontwikkelen;
+- het werk aan het publiek mede te delen, waaronder het recht om het werk of kopieën ervan aan het publiek ter beschikking te stellen of te vertonen, en het werk, in voorkomend geval, in het openbaar uit te voeren;
+- het werk of kopieën ervan te verspreiden;
+- het werk of kopieën ervan uit te lenen en te verhuren;
+- de rechten op het werk of op kopieën ervan in sublicentie te geven.
 
 Deze rechten kunnen worden uitgeoefend met gebruikmaking van alle thans bekende of nog uit te vinden media, dragers en formaten, voor zover het toepasselijke recht dit toestaat. In de landen waar immateriële rechten van toepassing zijn, doet de licentiegever afstand van zijn recht op uitoefening van zijn immateriële rechten in de mate die door het toepasselijke recht wordt toegestaan teneinde een doeltreffende uitoefening van de bovenvermelde in licentie gegeven economische rechten mogelijk te maken. De licentiegever verleent de licentiehouder een royaltyvrij, niet-exclusief gebruiksrecht op alle octrooien van de licentiegever, voor zover dit noodzakelijk is om de uit hoofde van deze licentie verleende rechten op het werk te gebruiken.
 
@@ -49,7 +49,7 @@ De verlening van de bovenvermelde rechten is onderworpen aan een aantal aan de l
 
 Attributierecht: de licentiehouder moet alle auteurs-, octrooi- of merkenrechtelijke kennisgevingen onverlet laten alsook alle kennisgevingen die naar de licentie en de afwijzing van garanties verwijzen. De licentiehouder moet een afschrift van deze kennisgevingen en een afschrift van de licentie bij elke kopie van het werk voegen die hij verspreidt of mededeelt. De licentiehouder moet in elke bewerking duidelijk aangeven dat het werk is gewijzigd, en eveneens de datum van wijziging vermelden.
 
-Copyleftclausule: wanneer de licentiehouder kopieën van het oorspronkelijke werk of bewerkingen verspreidt of mededeelt, geschiedt die verspreiding of mededeling onder de voorwaarden van deze licentie of van een latere versie van deze licentie, tenzij het oorspronkelijke werk uitdrukkelijk alleen onder deze versie van de licentie wordt verspreid * bijvoorbeeld door de mededeling „alleen EUPL v. 1.2”. De licentiehouder (die licentiegever wordt) kan met betrekking tot het werk of de bewerkingen geen aanvullende bepalingen of voorwaarden opleggen of stellen die de voorwaarden van de licentie wijzigen of beperken.
+Copyleftclausule: wanneer de licentiehouder kopieën van het oorspronkelijke werk of bewerkingen verspreidt of mededeelt, geschiedt die verspreiding of mededeling onder de voorwaarden van deze licentie of van een latere versie van deze licentie, tenzij het oorspronkelijke werk uitdrukkelijk alleen onder deze versie van de licentie wordt verspreid \* bijvoorbeeld door de mededeling „alleen EUPL v. 1.2”. De licentiehouder (die licentiegever wordt) kan met betrekking tot het werk of de bewerkingen geen aanvullende bepalingen of voorwaarden opleggen of stellen die de voorwaarden van de licentie wijzigen of beperken.
 
 Verenigbaarheidsclausule: wanneer de licentiehouder bewerkingen of kopieën ervan verspreidt of mededeelt die zijn gebaseerd op het werk en op een ander werk dat uit hoofde van een verenigbare licentie in licentie is gegeven, kan die verspreiding of mededeling geschieden onder de voorwaarden van deze verenigbare licentie. Voor de toepassing van deze clausule wordt onder „verenigbare licentie” verstaan, de licenties die in het aanhangsel bij deze licentie zijn opgesomd. Indien de verplichtingen van de licentiehouder uit hoofde van de verenigbare licentie in strijd zijn met diens verplichtingen uit hoofde van deze licentie, hebben de verplichtingen van de verenigbare licentie voorrang.
 
@@ -67,7 +67,7 @@ Het werk is een werk in ontwikkeling, dat voortdurend door vele bewerkers wordt 
 
 ## 8. Uitsluiting van aansprakelijkheid
 
-Behoudens in het geval van een opzettelijke fout of directe schade aan natuurlijke personen, is de licentiegever in geen enkel geval aansprakelijk voor ongeacht welke directe of indirecte, materiële of immateriële schade die voortvloeit uit de licentie of het gebruik van het werk, met inbegrip van, maar niet beperkt tot schade als gevolg van het verlies van goodwill, verloren werkuren, een computerdefect of computerfout, het verlies van gegevens, of enige andere commerciële schade, zelfs indien de licentiegever werd gewezen op de mogelijkheid van dergelijke schade. De licentiegever is echter aansprakelijk op grond van de wetgeving inzake productaansprakelijkheid, voor zover deze wetgeving op het werk van toepassing is. 
+Behoudens in het geval van een opzettelijke fout of directe schade aan natuurlijke personen, is de licentiegever in geen enkel geval aansprakelijk voor ongeacht welke directe of indirecte, materiële of immateriële schade die voortvloeit uit de licentie of het gebruik van het werk, met inbegrip van, maar niet beperkt tot schade als gevolg van het verlies van goodwill, verloren werkuren, een computerdefect of computerfout, het verlies van gegevens, of enige andere commerciële schade, zelfs indien de licentiegever werd gewezen op de mogelijkheid van dergelijke schade. De licentiegever is echter aansprakelijk op grond van de wetgeving inzake productaansprakelijkheid, voor zover deze wetgeving op het werk van toepassing is.
 
 ## 9. Aanvullende overeenkomsten
 
@@ -93,30 +93,29 @@ Onverminderd artikel 9 vormt de licentie de gehele overeenkomst tussen de partij
 
 Onverminderd specifieke overeenkomsten tussen de partijen,
 
-* vallen alle geschillen tussen de instellingen, organen en instanties van de Europese Unie, als licentiegeefster, en een licentiehouder in verband met de uitlegging van deze licentie onder de bevoegdheid van het Hof van Justitie van de Europese Unie, conform artikel 272 van het Verdrag betreffende de werking van de Europese Unie,
-* vallen alle geschillen tussen andere partijen in verband met de uitlegging van deze licentie onder de uitsluitende bevoegdheid van het bevoegde gerecht van de plaats waar de licentiegever is gevestigd of zijn voornaamste activiteit uitoefent.
+- vallen alle geschillen tussen de instellingen, organen en instanties van de Europese Unie, als licentiegeefster, en een licentiehouder in verband met de uitlegging van deze licentie onder de bevoegdheid van het Hof van Justitie van de Europese Unie, conform artikel 272 van het Verdrag betreffende de werking van de Europese Unie,
+- vallen alle geschillen tussen andere partijen in verband met de uitlegging van deze licentie onder de uitsluitende bevoegdheid van het bevoegde gerecht van de plaats waar de licentiegever is gevestigd of zijn voornaamste activiteit uitoefent.
 
 ## 15. Toepasselijk recht
 
 Onverminderd specifieke overeenkomsten tussen de partijen,
 
-* wordt deze licentie beheerst door het recht van de lidstaat van de Europese Unie waar de licentiegever zijn statutaire zetel, verblijfplaats of hoofdkantoor heeft,
-* wordt deze licentie beheerst door het Belgische recht indien de licentiegever geen statutaire zetel, verblijfplaats of hoofdkantoor heeft in een lidstaat van de Europese Unie.
-
+- wordt deze licentie beheerst door het recht van de lidstaat van de Europese Unie waar de licentiegever zijn statutaire zetel, verblijfplaats of hoofdkantoor heeft,
+- wordt deze licentie beheerst door het Belgische recht indien de licentiegever geen statutaire zetel, verblijfplaats of hoofdkantoor heeft in een lidstaat van de Europese Unie.
 
 ## Aanhangsel
 
 „Verenigbare licenties” in de zin van artikel 5 EUPL zijn:
 
-* GNU Affero General Public License (AGPL) v. 3
-* Open Software License (OSL) v. 2.1, v. 3.0
-* Eclipse Public License (EPL) v. 1.0
-* CeCILL v. 2.0, v. 2.1
-* Mozilla Public Licence (MPL) v. 2
-* GNU Lesser General Public Licence (LGPL) v. 2.1, v. 3
-* Creative Commons Attribution-ShareAlike v. 3.0 Unported (CC BY-SA 3.0) voor andere werken dan software
-* European Union Public Licence (EUPL) v. 1.1, v. 1.2
-* Québec Free and Open-Source Licence * Reciprocity (LiLiQ-R) of Strong Reciprocity (LiLiQ-R+).
+- GNU Affero General Public License (AGPL) v. 3
+- Open Software License (OSL) v. 2.1, v. 3.0
+- Eclipse Public License (EPL) v. 1.0
+- CeCILL v. 2.0, v. 2.1
+- Mozilla Public Licence (MPL) v. 2
+- GNU Lesser General Public Licence (LGPL) v. 2.1, v. 3
+- Creative Commons Attribution-ShareAlike v. 3.0 Unported (CC BY-SA 3.0) voor andere werken dan software
+- European Union Public Licence (EUPL) v. 1.1, v. 1.2
+- Québec Free and Open-Source Licence \* Reciprocity (LiLiQ-R) of Strong Reciprocity (LiLiQ-R+).
 
 De Europese Commissie kan dit aanhangsel actualiseren in geval van latere versies van de bovengenoemde licenties zonder dat er een nieuwe EUPL-versie wordt ontwikkeld, zolang die versies de uit hoofde van artikel 2 van deze licentie verleende rechten verlenen en ze de betrokken broncode beschermen tegen exclusieve toe-eigening.
 

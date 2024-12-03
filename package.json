@@ -1,0 +1,14 @@
+{
+  "name": "mijn-bureau",
+  "version": "1.0.0",
+  "description": "Met Mijn Bureau onderzoeken we open source kantoorsoftware voor, door en met overheden.",
+  "main": "index.js",
+  "scripts": {
+    "prettier:format": "npx prettier --write **/*.{md,yaml,yml}"
+  },
+  "author": "MinBZK/mijn-bureau",
+  "license": "EUPL-1.2",
+  "devDependencies": {
+    "prettier": "^3.4.1"
+  }
+}
