@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "streetsidesoftware.code-spell-checker",
+    "redhat.vscode-yaml",
+    "mhutchie.git-graph",
+    "esbenp.prettier-vscode",
+  ]
+}

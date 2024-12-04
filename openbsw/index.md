@@ -1,52 +1,53 @@
 # OpenBSW
 
-Proof of Concept van een uitwerking van Beter SamenWerken functionaliteiten 
+Proof of Concept van een uitwerking van Beter SamenWerken functionaliteiten
 in te richten die de autonomie van de overheid versterkt met open source.
 
 ## Uitgangspunten
 
-* Volgens [kernprincipes digitale overheid](https://www.rijksoverheid.nl/documenten/rapporten/2023/12/22/geactualiseerde-werkagenda-waardengedreven-digitaliseren-2024):
+- Volgens [kernprincipes digitale overheid](https://www.rijksoverheid.nl/documenten/rapporten/2023/12/22/geactualiseerde-werkagenda-waardengedreven-digitaliseren-2024):
   hergebruik, open standaarden, en open source.
-* Hergebruikt open source van overheden: van de Franse en Duitse open source
+- Hergebruikt open source van overheden: van de Franse en Duitse open source
   samenwerksoftware en andere overheidssoftware zoals van de VNG en
   Europese Commissie.
-* Werkt waar mogelijk samen met andere overheden en geeft indien opportuun
+- Werkt waar mogelijk samen met andere overheden en geeft indien opportuun
   verbeteringen terug.
-* Geïntegreerd en voelt als 1 applicatie.
-* Houd volledige controle over alle gegevens, informatie en processen.
-* Draait op een Haven infrastructuur en kan daarmee op alle compatibele
+- Geïntegreerd en voelt als 1 applicatie.
+- Houd volledige controle over alle gegevens, informatie en processen.
+- Draait op een Haven infrastructuur en kan daarmee op alle compatibele
   (eigen) clouds werken.
-* Past opensourcewerken volledig toe en draagt bij aan gebruikte projecten.
-* Werkt samen met een brede verscheidenheid aan stakeholders binnen de
+- Past opensourcewerken volledig toe en draagt bij aan gebruikte projecten.
+- Werkt samen met een brede verscheidenheid aan stakeholders binnen de
   overheid, vergelijkbare projecten en bedrijven.
-* Sluit aan bij andere beleidsdoelstellingen uit de werkagenda en onder andere
+- Sluit aan bij andere beleidsdoelstellingen uit de werkagenda en onder andere
   programma’s Digitale Gemeenschapsgoederen, Open Source, Open op Orde,
   Grenzeloos Samenwerken en Data bij de Bron.
 
 ## Gewenste eindresultaten
 
-* Werkend en werkbare uitwerking van BSW door maximaal hergebruik van
+- Werkend en werkbare uitwerking van BSW door maximaal hergebruik van
   open source oplossingen met opensourcewerken is neergezet.
-* Evaluatie van de beproeving, ervaringen en relatie tot de eisen in BSW met
+- Evaluatie van de beproeving, ervaringen en relatie tot de eisen in BSW met
   rapportage over de vergelijkingen met andere samenwerksoftware.
-* Nadere selectie van projecten om specifiek te beproeven, met analyse op de
+- Nadere selectie van projecten om specifiek te beproeven, met analyse op de
   bruikbaarheid, risico’s en verhouding tot de rest van het BSW project.
-* Aandachtspunten voor bredere ingebruikname waaronder implementatie,
+- Aandachtspunten voor bredere ingebruikname waaronder implementatie,
   beheer en doorontwikkeling.
 
 ## Project scope en afbakening
-* Het uitproberen van een werkend samenwerkingssysteem naar de doelen van
+
+- Het uitproberen van een werkend samenwerkingssysteem naar de doelen van
   BSW als Proof Of Concept (PoC).
-* PoC is niet gekoppeld met bestaande systemen. Wel pad naar koppelingen
+- PoC is niet gekoppeld met bestaande systemen. Wel pad naar koppelingen
   uitgewerkt.
-* PoC is niet bedoeld om de schaal van BSW aan te kunnen, moet goed werken
+- PoC is niet bedoeld om de schaal van BSW aan te kunnen, moet goed werken
   voor enkele gebruikers. Wel pad naar schaling uitgewerkt.
-* PoC bevat alle gangbare en geavanceerde maatregelen voor
+- PoC bevat alle gangbare en geavanceerde maatregelen voor
   informatiebeveiliging maar word niet actief beveiligd.
-* Functionaliteit vergelijkbaar met bekende kantoorsoftware
-* Geïntegreerde samenwerkfunctionaliteit om gelijktijdig in documenten te
+- Functionaliteit vergelijkbaar met bekende kantoorsoftware
+- Geïntegreerde samenwerkfunctionaliteit om gelijktijdig in documenten te
   werken, hier over te kunnen communiceren en deze op te slaan.
-* Geen of beperkte functionaliteit die kan worden hergebruikt
+- Geen of beperkte functionaliteit die kan worden hergebruikt
   volgens BSW zonder publieke documentatie.
 
 ## Beoogde projecten voor hergebruik
