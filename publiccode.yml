@@ -1,0 +1,35 @@
+publiccodeYmlVersion: "0.2"
+categories:
+  - it-development
+description:
+  en:
+    features:
+      - Open Source
+      - Office software
+      - Government
+    genericName: mijn-bureau
+    longDescription: |
+      With mijn-bureau we investigate open source office software for, by and with governments.
+
+      mijn-bureau is a collaboration between the Central Government, the Municipality of Amsterdam and the Association of Dutch Municipalities.
+
+    shortDescription: With mijn-bureay we investigate open source office software for, by and with governments.
+developmentStatus: concept
+legal:
+  license: EUPL-1.2
+localisation:
+  availableLanguages:
+    - en
+    - nl
+  localisationReady: false
+maintenance:
+  contacts:
+    - name: Mijn Bureau
+      email: opensource@minbzk.nl
+  type: community
+name: mijn-bureau
+platforms:
+  - docs
+releaseDate: "2024-11-01"
+softwareType: standalone/web
+url: "https://github.com/MinBZK/mijn-bureau"
