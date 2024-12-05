@@ -1,4 +1,5 @@
 # Definition of Ready:
+
 - Oplossing is besproken binnen het team
 - Omvang en duur van de oplossing kunnen worden geschat
 - Een oplossing is op de juiste manier geadministreerd in GitHub
