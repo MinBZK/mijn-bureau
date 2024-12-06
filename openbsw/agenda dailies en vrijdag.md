@@ -1,4 +1,5 @@
 # Agenda voor dailies en vrijdag sync:
+
 1. Standup
 1. Nieuwe oplossingen
 1. Prioriteren backlog
