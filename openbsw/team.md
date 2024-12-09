@@ -4,7 +4,7 @@ De team leden van OpenBSW zijn de volgende (Op alfabetische volgorde)
 
 | Lid               | Rol             | Verantwoordelijkheid                                                                                          |
 | ----------------- | --------------- | ------------------------------------------------------------------------------------------------------------- |
-| Peter Gisker      | Adviseur        | Helpen met samenhang met strategie, BSW en andere Rijksonderdelen. Beantwoorden van inhoudelijke scope vragen |
+| Peter Giskes      | Adviseur        | Helpen met samenhang met strategie, BSW en andere Rijksonderdelen. Beantwoorden van inhoudelijke scope vragen |
 | Berry den Hartog  | DevOps Engineer | Uitrollen, onderhouden en uitbreiden van oplossingen                                                          |
 | Rik Hooft         | Scrum Master    | Faciliteren en ondersteuning, brug naar BSW meehelpen met PoC uitvoering                                      |
 | Boris van Hoytema | Product Owner   | Backlog management, richting vanuit OSPO                                                                      |
