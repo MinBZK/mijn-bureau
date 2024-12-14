@@ -21,6 +21,7 @@ Voor vastlegging gebruiken we Github Repositories onder de organisatie [MinBZK](
 
 - [MinBZK/mijn-bureau](https://github.com/MinBZK/mijn-bureau) voor documentatie.
 - [MinBZK/opendesk](https://github.com/MinBZK/opendesk) voor Infra opzet van oplossing OpenDesk
+- [MinBZK/leos](https://github.com/MinBZK/leos) voor Infra optzet van oplossing LEOS
 
 Voor formele communicatie wordt de Rijksoverheid email gebruikt.
 
