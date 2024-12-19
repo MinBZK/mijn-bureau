@@ -19,9 +19,11 @@ Voor project management gebruiken we [github projects](https://github.com/orgs/M
 
 Voor vastlegging gebruiken we Github Repositories onder de organisatie [MinBZK](https://github.com/orgs/MinBZK/repositories). Alle repositories die in beheer zijn van [mijn-bureau](https://github.com/orgs/MinBZK/teams/mijn-bureau/repositories) moeten publieklijk beschikbaar zijn. De repositories zijn:
 
-- [MinBZK/mijn-bureau](https://github.com/MinBZK/mijn-bureau) voor documentatie.
-- [MinBZK/opendesk](https://github.com/MinBZK/opendesk) voor Infra opzet van oplossing OpenDesk
-- [MinBZK/leos](https://github.com/MinBZK/leos) voor Infra optzet van oplossing LEOS
+- [github mijn-bureau](https://github.com/MinBZK/mijn-bureau) voor documentatie.
+- [github opendesk](https://github.com/MinBZK/opendesk) voor Infra opzet van oplossing OpenDesk
+- [github leos](https://github.com/MinBZK/leos) voor bouwen en infra van Legislation Editing Open Software (LEOS)
+- [github grist](https://github.com/MinBZK/grist) voor Infra opzet van oplossing Grist (onderdeel van LaSuite)
+- [github docs](https://github.com/MinBZK/docs) voor Infra opzet van oplossing Docs (onderdeel van LaSuite)
 
 Voor formele communicatie wordt de Rijksoverheid email gebruikt.
 
