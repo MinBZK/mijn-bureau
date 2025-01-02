@@ -25,7 +25,7 @@ Voor vastlegging gebruiken we Github Repositories onder de organisatie [MinBZK](
 - [github leos](https://github.com/MinBZK/leos) voor bouwen en infra van Legislation Editing Open Software (LEOS)
 - [github grist](https://github.com/MinBZK/grist) voor Infra opzet van oplossing Grist (onderdeel van LaSuite)
 - [github docs](https://github.com/MinBZK/docs) voor Infra opzet van oplossing Docs (onderdeel van LaSuite)
-- [github docs](https://github.com/MinBZK/meet) voor Infra opzet van oplossing Meet (onderdeel van LaSuite)
+- [github meet](https://github.com/MinBZK/meet) voor Infra opzet van oplossing Meet (onderdeel van LaSuite)
 
 Voor formele communicatie wordt de Rijksoverheid email gebruikt.
 
