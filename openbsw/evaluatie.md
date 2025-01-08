@@ -68,13 +68,46 @@ Onze Franse collegas vertelde dat ze van plan zijn de technology onder Webinar e
 
 ### Bevindingen
 
+#### Generiek
+
 De documentatie van LaSuite is moeilijk te vinden. Ook is lastig te achterhalen welke software precies draait onder de applicaties. Uiteindelijk hebben we alle repositories op github moeten analyseren die onder DINUM vallen.
 
 Alle componenten van LaSuite worden SaaS aangeboden. Er is geen informatie beschikbaar om de volledige suite te hosten. Bij een aantal producten zijn helm charts beschikbaar die we kunnen gebruiken om die applicaties op kubernetes te installeren. We zullen dus de componenten apart moeten bekijken.
 
-## Evaluatie OpenDesk
+Voordat je kan beginnen met LaSuite moet men eerste een identity provider hebben. We hebben voor KeyCloak gekozen omdat de developers hier al mee bekend zijn
 
-Momenteel worden de evaluatie van OpenDesk gedaan op **Proof of concept** niveau.
+#### Performance Efficiency
+
+Grist heeft minimaal 0.6 cpu aan resources nodig voor de database, anders is hij onbruikbaar traag
+
+#### Security
+
+- Grist heeft sandbox opties voor kubernetes
+
+#### Maintainability
+
+- Grist support custom styling
+- Grist is open source en dus aan te passen als nodig.
+
+#### Flexibility
+
+- Grist support Single Sign on met OpenID connect en SAML.
+- Grist heeft mogelijkheid om API endpoints voor AI te configureren
+- Grist is containerized wat het makkelijk deploybaar maakt op kubernetes
+
+#### Reliability
+
+- Grist support backups naar s3
+- grist heeft detail telemetry
+
+#### Compatibility
+
+- Grist kan integreren met google drive
+- Grist slaat de data op in SQLite formaat
+- Grist kan Import van CSV formaat
+- Grist kan met meerdere type SQL databases integreren
+
+## Evaluatie OpenDesk
 
 ### Intro
 
@@ -150,11 +183,9 @@ LEOS vereist java 8.0 (2014). Java 17 and Java 21 zijn momenteel de Long-Term-Su
 
 #### Maintainability
 
-Geen bevindingen
+LEOS is opensource en kan naar wens aangepast worden.
 
 #### Flexibility
-
-LEOS is opensource en kan naar wens aangepast worden.
 
 LEOS support een aantal verschillende databases en kan met JDBC geconfigureerd worden.
 
