@@ -147,15 +147,44 @@ Alle informatie kan gevonden worden op [opencode](https://gitlab.opencode.de/bmi
 
 ### Bevindingen
 
-- OpenDesk is redelijk gedocumenteerd. Een aantal documenten zijn in het Duits, wat het opzetten van OpenDesk vertraagde. Maar met de huidige vertaal oplossingen was dit geen groot probleem.
-- OpenDesk is makkelijk te installeren als Proof of concept op kubernetes omdat er alleen basis kubernetes componenten gebruikt worden.
-- Er zijn heel veel helm charts wat het moeilijk maakt om alle opties te overzien.
-- Een aantal opties leken nog niet goed te werken als we die aan zetten zoals ReadWriteMany storage.
-- Alle containers worden momenteel uit de container registry gehaald van ZenDiS. Als we deze willen aanpassen zullen we onze eigen containers moeten bouwen of opties inbouwen in de OpenDesk Containers
-- OpenDesk is een totaal pakket waarbij je componenten aan en uit kan zetten.
-- Momenteel worden databases en storage componenten mee gedeployed in OpenDesk als containers, deze zou je bij voorkeur afnemen van je hosting provider zodat backup direct geregeld is
+#### Generiek
 
-Tijdens overleg met onze Duitse collega's bleek dat voor het opschalen een enterprise licentie genomen moet worden die extra componenten toevoegen. Ook was de migratie van versies nog niet perfect maar daar werkte ze nu hard aan.
+- OpenDesk is redelijk gedocumenteerd. Een aantal documenten zijn in het Duits, wat het opzetten van OpenDesk vertraagde. Maar met de huidige vertaal oplossingen was dit geen groot probleem.
+- Een aantal opties leken nog niet goed te werken als we die aan zetten zoals ReadWriteMany storage.
+- OpenDesk bestaat uit een installatie pakket waarbij je componenten aan en uit kan zetten.
+- OpenDesk heeft een afhankelijkheid van een LDAP server waar de gebruikers en andere metadata opgeslagen wordt.
+- OpenDesk gebruik een keycloak extensie TOKEN_EXCHANGE, de keycloak is gekoppeld aan de ldap server
+- OpenDesk is gemaakt om op kubernetes te installeren,
+- Opendesk heeft een admin paneel waar je informatie van de LDAP server kan manipuleren.
+
+#### Performance Efficiency
+
+In de basis installatie zijn er 80 container applicaties, default vragen tussen de 0.1 en 1 cpu. totaal komen de resource requirements neer op +- 10 CPU cores en +-21GB geheugen. Wel is er redelijke response van alle services.
+
+#### Security
+
+Na het installeren moeten nog wat stappen genomen worden om security beter te regelen zoals kubernetes network policies en podSecurityPolicies.
+
+#### Maintainability
+
+- OpenDesk is opgebouwd uit opensource componenten, dus men kan alles aanpassen
+- Alle containers worden momenteel uit de container registry gehaald van ZenDiS. Als we deze willen aanpassen zullen we onze eigen containers moeten bouwen of opties inbouwen in de OpenDesk Containers
+- OpenDesk is makkelijk te installeren als Proof of concept op kubernetes omdat er alleen basis kubernetes componenten gebruikt worden.
+
+#### Flexibility
+
+- Er zijn heel veel helm charts wat het moeilijk maakt om alle opties te overzien.
+- OpenDesk heeft veel configuratie voor kubernetes Nginx ingress. Dit betekend dat een andere ingress server veel werk met zich mee zal brengen omdat je zelf al deze resources moet herschrijven, als het al mogelijk is.
+
+#### Reliability
+
+- Momenteel worden databases en storage componenten mee gedeployed in OpenDesk als containers, deze zou je bij voorkeur afnemen van je hosting provider zodat backup direct geregeld is
+- Tijdens overleg met onze Duitse collega's bleek dat voor het opschalen een enterprise licentie genomen moet worden die extra componenten toevoegen. Ook was de migratie van versies nog niet perfect maar daar werkte ze nu hard aan.
+- Er zijn End to End testen beschikbaar
+
+#### Compatibility
+
+Geen bevindingen
 
 ## Evaluatie LEOS
 
