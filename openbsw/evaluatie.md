@@ -124,14 +124,50 @@ Momenteel worden de beproevingen van LEOS gedaan op **Proof of concept** niveau.
 
 LEOS is een webtool ter ondersteuning van het opstellen van wetgeving in de EU met online samenwerking, versiebeheer en co-editing. De software is ontwikkeld onder de Europese Commissie.
 
-We hebben versie 5.1.3 uitgeprobeerd. De code is beschikbaar op https://github.com/MinBZK/leos en de website draait https://leos.apps.digilab.network/
+We hebben versie 5.1.3 uitgeprobeerd. De deployment code is beschikbaar op https://github.com/MinBZK/leos en de website draait https://leos.apps.digilab.network/
 
 De sourcecode van LEOS is te vinden op https://code.europa.eu/leos/core
 
 ### Bevindingen
 
+Dit zijn de bevindingen voor LEOS.
+
+#### Generiek
+
 - Documentatie is duidelijk voor Proof of concept. Voor productie is er weinig informatie te vinden.
-- Het is onduidelijk wat Annotate en LEOS met elkaar te maken hebben (er wordt wel in de documentatie naar gerefereerd)
-- We moeten zelf de applicatie in een container stoppen
-- Er is geen architectuur plaat te vinden van de onderliggende componenten wat het cloud native maken van de applicatie vermoeilijkt
-- Op ARM lijkt de applicatie niet te compilen
+- Er wordt vermeld dat een aantal belangrijke componenten uit staat om ease of use te verbeteren, maar kan nergens vinden welke componenten dit zijn en hoe ik ze wel aan zet als we de volledige ervaring willen.
+- Het is onduidelijk wat Annotate en LEOS met elkaar te maken hebben (er wordt wel in de documentatie naar Annotate gerefereerd als benodigd component)
+- Leos lijkt niet Cloud Native ontwikkeld te zijn.
+- Er is een OpenAPI spec beschikbaar wat fijn is.
+
+#### Performance Efficiency
+
+Het opstarten van LEOS heeft een relatief hoge hoeveelheid cpu en memory nodig. Wij gebruiken nu 0.3 cpu en 6Gi memory bij geen load. Bij deze specs duur het ongeveer 360 seconden om op te starten. Bij minder dan 3Gi memory start de applicatie niet.
+
+#### Security
+
+LEOS vereist java 8.0 (2014). Java 17 and Java 21 zijn momenteel de Long-Term-Support (LTS) varianten. Oracle geeft sinds 2019 geen public updates meer voor java 8.0. Wel is er een optie voor commericial klanten om updates te krijgen als ze een java 8 licentie afnemen.
+
+#### Maintainability
+
+Geen bevindingen
+
+#### Flexibility
+
+LEOS is opensource en kan naar wens aangepast worden.
+
+LEOS support een aantal verschillende databases en kan met JDBC geconfigureerd worden.
+
+LEOS kan integeren met een idendity provider in SAML formaat.
+
+i18n wordt gesupport wat meerdere talen support mogelijk maakt, default Engels en frans.
+
+#### Reliability
+
+Geen bevindingen
+
+#### Compatibility
+
+LEOS gebruik open standarden zoals het AKN4EU AkomaNtoso XML format, dit maakt het makkelijk voor andere applicaties die deze standaard supporten om de data te gebruiken.
+
+LEOS gebruikt SAML, ik zou graag ook OpenID Connect zien.
