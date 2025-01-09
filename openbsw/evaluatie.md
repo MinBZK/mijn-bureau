@@ -135,7 +135,7 @@ OpenDesk bestaat uit veel componeneten. De hoofd componenten zijn:
 | Calendar        | Calender           | Open-XChange       | https://gitlab.opencode.de/bmi/opendesk/component-code/groupware/appsuite8                                                                         |
 | Contacts        | Contacten          | Open-XChange       | https://gitlab.opencode.de/bmi/opendesk/component-code/groupware/appsuite8                                                                         |
 | Files           | Office applicaties | Collabora          | [https://gitlab.opencode.de/bmi/opendesk/component-code/office/collabora](https://gitlab.opencode.de/bmi/opendesk/component-code/office/collabora) |
-| Tasks           | Taken managen      |  Open XChange      | https://gitlab.opencode.de/bmi/opendesk/component-code/groupware/appsuite8                                                                         |
+| Tasks           | Taken managen      | Open XChange       | https://gitlab.opencode.de/bmi/opendesk/component-code/groupware/appsuite8                                                                         |
 | Projects        | Project Beheer     |  OpenProject       | https://gitlab.opencode.de/bmi/opendesk/component-code/project-management/openproject                                                              |
 | Knowledge       | Kennis beheer      |  XWiki             | https://gitlab.opencode.de/bmi/opendesk/component-code/knowledge-management/xwiki                                                                  |
 | VideoConference | Video bellen       | Jitsi              | https://gitlab.opencode.de/bmi/opendesk/component-code/realtimecommunication/nordeck                                                               |
@@ -149,7 +149,7 @@ Alle informatie kan gevonden worden op [opencode](https://gitlab.opencode.de/bmi
 
 #### Generiek
 
-- OpenDesk is redelijk gedocumenteerd. Een aantal documenten zijn in het Duits, wat het opzetten van OpenDesk vertraagde. Maar met de huidige vertaal oplossingen was dit geen groot probleem.
+- OpenDesk is gedocumenteerd. Een aantal documenten zijn in het Duits wat het opzetten van OpenDesk vertraagd. Maar met de huidige vertaal oplossingen was dit geen groot probleem.
 - Een aantal opties leken nog niet goed te werken als we die aan zetten zoals ReadWriteMany storage.
 - OpenDesk bestaat uit een installatie pakket waarbij je componenten aan en uit kan zetten.
 - OpenDesk heeft een afhankelijkheid van een LDAP server waar de gebruikers en andere metadata opgeslagen wordt.
