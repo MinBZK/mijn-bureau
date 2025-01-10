@@ -62,7 +62,7 @@ LaSuite bestaat uit de componenten:
 | Docs             | Notities                  |  BlocNote.js                 | https://github.com/numerique-gouv/impress                       |
 | Messaging        | MailBox & Calander        | ?                            | ?                                                               |
 
-Onze Franse collegas vertelde dat ze van plan zijn de technology onder Webinar en WebConf te vervangen door [liveKit](https://github.com/livekit/livekit) - [source code](https://github.com/numerique-gouv/meet).
+Onze Franse collega's vertelden dat ze van plan zijn de technology onder Webinar en WebConf te vervangen door [liveKit](https://github.com/livekit/livekit) - [source code](https://github.com/numerique-gouv/meet).
 
 > Bovenstaande lijst is nog niet gevalideerd door onze Franse collegas en heeft dus nog wat onzekerheid.
 
@@ -111,7 +111,7 @@ Grist heeft minimaal 0.6 cpu aan resources nodig voor de database, anders is hij
 
 ### Intro
 
-openDesk is de aanpasbare kantoor- en samenwerkingssuite. Deze oplossing is grotendeels samengesteld door de duitse overheid. ZenDiS is de organisatie die de tool ontwikkeld. OpenDesk combineerd veel open-source producten in deze oplossing en integreert ze met elkaar. De tool heeft een sterkefocus op data soevereiniteit en veiligheid. De suite heeft versie 1.0 gerelease in oktober 2024 en wordt op moment van schrijven (december 2024) door ongeveer 600 mensen gebruikt. Versie 1.1 wordt in december 2024 gereleased.
+openDesk is de aanpasbare kantoor- en samenwerkingssuite. Deze oplossing is grotendeels samengesteld door de Duitse overheid. ZenDiS is de organisatie die de tool ontwikkelt. OpenDesk combineert veel open-source producten in deze oplossing en integreert ze met elkaar. De tool heeft een sterke focus op data soevereiniteit en veiligheid. De suite heeft versie 1.0 gerelease in oktober 2024 en wordt op moment van schrijven (december 2024) door ongeveer 600 mensen gebruikt. Versie 1.1 wordt in december 2024 gereleased.
 
 De sourcecode voor OpenDesk is volledige beschikbaar gemaakt op [opencode](https://gitlab.opencode.de/bmi/opendesk)
 
@@ -127,7 +127,7 @@ OpenDesk bestaat uit veel componeneten. De hoofd componenten zijn:
 | Calendar        | Calender           | Open-XChange       | https://gitlab.opencode.de/bmi/opendesk/component-code/groupware/appsuite8                                                                         |
 | Contacts        | Contacten          | Open-XChange       | https://gitlab.opencode.de/bmi/opendesk/component-code/groupware/appsuite8                                                                         |
 | Files           | Office applicaties | Collabora          | [https://gitlab.opencode.de/bmi/opendesk/component-code/office/collabora](https://gitlab.opencode.de/bmi/opendesk/component-code/office/collabora) |
-| Tasks           | Taken managen      |  Open XChange      | https://gitlab.opencode.de/bmi/opendesk/component-code/groupware/appsuite8                                                                         |
+| Tasks           | Taken managen      |  Open XChange      | https://gitlab.opencode.de/bmi/opendesk/component-code/groupware/appsuite8                                                                         |
 | Projects        | Project Beheer     |  OpenProject       | https://gitlab.opencode.de/bmi/opendesk/component-code/project-management/openproject                                                              |
 | Knowledge       | Kennis beheer      |  XWiki             | https://gitlab.opencode.de/bmi/opendesk/component-code/knowledge-management/xwiki                                                                  |
 | VideoConference | Video bellen       | Jitsi              | https://gitlab.opencode.de/bmi/opendesk/component-code/realtimecommunication/nordeck                                                               |
@@ -139,7 +139,7 @@ Alle informatie kan gevonden worden op [opencode](https://gitlab.opencode.de/bmi
 
 ### Bevindingen
 
-- OpenDesk is redelijk gedocumenteerd. Een aantal documenten zijn in een duits wat het opzetten van OpenDesk vertraagde. Maar met de huidige vertaal oplossingen was dit geen groot probleem.
+- OpenDesk is redelijk gedocumenteerd. Een aantal documenten zijn in het Duits, wat het opzetten van OpenDesk vertraagde. Maar met de huidige vertaal oplossingen was dit geen groot probleem.
 - OpenDesk is makkelijk te installeren als Proof of concept op kubernetes omdat er alleen basis kubernetes componenten gebruikt worden.
 - Er zijn heel veel helm charts wat het moeilijk maakt om alle opties te overzien.
 - Een aantal opties leken nog niet goed te werken als we die aan zetten zoals ReadWriteMany storage.
@@ -147,7 +147,7 @@ Alle informatie kan gevonden worden op [opencode](https://gitlab.opencode.de/bmi
 - OpenDesk is een totaal pakket waarbij je componenten aan en uit kan zetten.
 - Momenteel worden databases en storage componenten mee gedeployed in OpenDesk als containers, deze zou je bij voorkeur afnemen van je hosting provider zodat backup direct geregeld is
 
-Tijdens overleg met onze duitse collegas bleek dat voor het opschalen een enterprise licentie genomen moet worden die extra componenten toevoegen. Ook was de migratie van versies nog niet perfect maar daar werkte ze nu hard aan.
+Tijdens overleg met onze Duitse collega's bleek dat voor het opschalen een enterprise licentie genomen moet worden die extra componenten toevoegen. Ook was de migratie van versies nog niet perfect maar daar werkte ze nu hard aan.
 
 ## Evaluatie LEOS
 
