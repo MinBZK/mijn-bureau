@@ -88,17 +88,20 @@ Grist heeft minimaal 0.6 cpu aan resources nodig voor de database, anders is hij
 
 - Grist support custom styling
 - Grist is open source en dus aan te passen als nodig.
+- Docs is open source en dus aan te passen als nodig.
 
 #### Flexibility
 
 - Grist support Single Sign on met OpenID connect en SAML.
 - Grist heeft mogelijkheid om API endpoints voor AI te configureren
 - Grist is containerized wat het makkelijk deploybaar maakt op kubernetes
+- Docs heeft styling parameter in de backend maar vermoed dat voor grote styling changes we de frontend next.js application moeten aanpassen
 
 #### Reliability
 
 - Grist support backups naar s3
 - grist heeft detail telemetry
+- Docs heeft integratie met sentry
 
 #### Compatibility
 
@@ -106,6 +109,11 @@ Grist heeft minimaal 0.6 cpu aan resources nodig voor de database, anders is hij
 - Grist slaat de data op in SQLite formaat
 - Grist kan Import van CSV formaat
 - Grist kan met meerdere type SQL databases integreren
+- Docs kan met meerdere s3 stores integreren
+- Docs kan met SMTP mailservers integreren
+- Docs kan met meerdere type SQL databases integreren
+- Docs support OpenID Connect
+- Docs heeft AI inference endpoint support
 
 ## Evaluatie OpenDesk
 
