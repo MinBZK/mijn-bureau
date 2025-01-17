@@ -8,7 +8,19 @@ on:
 name: Format
 
 jobs:
-  format:
+  sonarqube:
+    name: SonarQube
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@v4
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+  prettier:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,4 +37,28 @@ jobs:
         run: npm ci
 
       - name: Format Markdown files
-        run: npx prettier --check "**/*.{md,yaml,yml}"
+        run: npx prettier --write "**/*.{md,yaml,yml}"
+
+      - name: Commit changes
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          if [ -n "$(git status --porcelain)" ]; then
+            git add .
+            git commit -m 'Format YAML files'
+          else
+            echo "No changes to commit"
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Fix formatting issues"
+          branch: prettier-fix
+          branch-suffix: short-commit-hash
+          title: "Prettier: Fix formatting issues"
+          body: |
+            Fix prettier formattin issues
