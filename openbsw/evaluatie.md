@@ -156,6 +156,7 @@ Alle informatie kan gevonden worden op [opencode](https://gitlab.opencode.de/bmi
 - OpenDesk gebruik een keycloak extensie TOKEN_EXCHANGE, de keycloak is gekoppeld aan de ldap server
 - OpenDesk is gemaakt om op kubernetes te installeren,
 - Opendesk heeft een admin paneel waar je informatie van de LDAP server kan manipuleren.
+- Opendesk heeft custom LDAP integraties nodig voordat SSO via openid connect werkt. De gebruiker moet in ldap staan voordat hij kan inloggen
 
 #### Performance Efficiency
 
