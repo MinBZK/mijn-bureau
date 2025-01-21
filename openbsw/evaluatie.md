@@ -79,6 +79,7 @@ Voordat je kan beginnen met LaSuite moet men eerste een identity provider hebben
 #### Performance Efficiency
 
 Grist heeft minimaal 0.6 cpu aan resources nodig voor de database, anders is hij onbruikbaar traag
+AI-webservice: deze heeft GPUs nodig anders is het te traag
 
 #### Security
 
@@ -114,6 +115,7 @@ Grist heeft minimaal 0.6 cpu aan resources nodig voor de database, anders is hij
 - Docs kan met meerdere type SQL databases integreren
 - Docs support OpenID Connect
 - Docs heeft AI inference endpoint support
+- AI-webservice ollama support openai interface wat er voor zorgt dat andere tool makkelijk kunnen integreren.
 
 ## Evaluatie OpenDesk
 
