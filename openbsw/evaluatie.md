@@ -76,6 +76,8 @@ Alle componenten van LaSuite worden SaaS aangeboden. Er is geen informatie besch
 
 Voordat je kan beginnen met LaSuite moet men eerste een identity provider hebben. We hebben voor KeyCloak gekozen omdat de developers hier al mee bekend zijn
 
+Meet heeft real time verbindingen nodig die niet makkelijk over ingress gaan. Dus je moet een goed begrip hebben van het netwerk om deze goed te installeren. 
+
 #### Performance Efficiency
 
 Grist heeft minimaal 0.6 cpu aan resources nodig voor de database, anders is hij onbruikbaar traag
@@ -90,6 +92,7 @@ AI-webservice: deze heeft GPUs nodig anders is het te traag
 - Grist support custom styling
 - Grist is open source en dus aan te passen als nodig.
 - Docs is open source en dus aan te passen als nodig.
+- Meet is open source en dus aan te passen als nodig.
 
 #### Flexibility
 
@@ -97,12 +100,14 @@ AI-webservice: deze heeft GPUs nodig anders is het te traag
 - Grist heeft mogelijkheid om API endpoints voor AI te configureren
 - Grist is containerized wat het makkelijk deploybaar maakt op kubernetes
 - Docs heeft styling parameter in de backend maar vermoed dat voor grote styling changes we de frontend next.js application moeten aanpassen
+- Meet support single sign on
 
 #### Reliability
 
 - Grist support backups naar s3
 - grist heeft detail telemetry
 - Docs heeft integratie met sentry
+- Meet heeft integratie met s3
 
 #### Compatibility
 
@@ -110,11 +115,13 @@ AI-webservice: deze heeft GPUs nodig anders is het te traag
 - Grist slaat de data op in SQLite formaat
 - Grist kan Import van CSV formaat
 - Grist kan met meerdere type SQL databases integreren
+- Grist heeft AI support compatible met OpenAI Interface
 - Docs kan met meerdere s3 stores integreren
 - Docs kan met SMTP mailservers integreren
 - Docs kan met meerdere type SQL databases integreren
 - Docs support OpenID Connect
-- Docs heeft AI inference endpoint support
+- Docs heeft AI inference endpoint support compatible met OpenAI Interface
+- Meet heeft AI support compatible met OpenAI Interface
 - AI-webservice ollama support openai interface wat er voor zorgt dat andere tool makkelijk kunnen integreren.
 
 ## Evaluatie OpenDesk
