@@ -81,6 +81,7 @@ Meet heeft real time verbindingen nodig die niet makkelijk over ingress gaan. Du
 #### Performance Efficiency
 
 Grist heeft minimaal 0.6 cpu aan resources nodig voor de database, anders is hij onbruikbaar traag
+AI-webservice: deze heeft GPUs nodig anders is het te traag
 
 #### Security
 
@@ -121,6 +122,7 @@ Grist heeft minimaal 0.6 cpu aan resources nodig voor de database, anders is hij
 - Docs support OpenID Connect
 - Docs heeft AI inference endpoint support compatible met OpenAI Interface
 - Meet heeft AI support compatible met OpenAI Interface
+- AI-webservice ollama support openai interface wat er voor zorgt dat andere tool makkelijk kunnen integreren.
 
 ## Evaluatie OpenDesk
 
