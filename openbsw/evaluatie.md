@@ -78,14 +78,18 @@ Voordat je kan beginnen met LaSuite moet men eerste een identity provider hebben
 
 Meet heeft real time verbindingen nodig die niet makkelijk over ingress gaan. Dus je moet een goed begrip hebben van het netwerk om deze goed te installeren. 
 
+Als we het over TChap hebben hieronder bedoelen we eigenlijk element synapse matrix implementatie incusief the clients voor web, mobile and pc van element. 
+
 #### Performance Efficiency
 
 Grist heeft minimaal 0.6 cpu aan resources nodig voor de database, anders is hij onbruikbaar traag
 AI-webservice: deze heeft GPUs nodig anders is het te traag
+TChap: Het kan even duren voordat rooms(chat groepen) gesynced zijn met alle andere homeservers. 
 
 #### Security
 
 - Grist heeft sandbox opties voor kubernetes
+- TChap maakt gebruikt van OLM encyptie
 
 #### Maintainability
 
@@ -93,6 +97,7 @@ AI-webservice: deze heeft GPUs nodig anders is het te traag
 - Grist is open source en dus aan te passen als nodig.
 - Docs is open source en dus aan te passen als nodig.
 - Meet is open source en dus aan te passen als nodig.
+- TChap is open source en dus aan te passen als nodig. 
 
 #### Flexibility
 
@@ -101,6 +106,9 @@ AI-webservice: deze heeft GPUs nodig anders is het te traag
 - Grist is containerized wat het makkelijk deploybaar maakt op kubernetes
 - Docs heeft styling parameter in de backend maar vermoed dat voor grote styling changes we de frontend next.js application moeten aanpassen
 - Meet support single sign on
+- TChap support Single sign on
+- Tchap kan integreren met verschillende video conferenctie tools
+- Tchap admin panel valt onder betaalde licentie. 
 
 #### Reliability
 
@@ -108,6 +116,7 @@ AI-webservice: deze heeft GPUs nodig anders is het te traag
 - grist heeft detail telemetry
 - Docs heeft integratie met sentry
 - Meet heeft integratie met s3
+- Tchap heeft detail telemetry
 
 #### Compatibility
 
@@ -123,6 +132,7 @@ AI-webservice: deze heeft GPUs nodig anders is het te traag
 - Docs heeft AI inference endpoint support compatible met OpenAI Interface
 - Meet heeft AI support compatible met OpenAI Interface
 - AI-webservice ollama support openai interface wat er voor zorgt dat andere tool makkelijk kunnen integreren.
+- Tchap volgt the matrix standard voor chat
 
 ## Evaluatie OpenDesk
 
