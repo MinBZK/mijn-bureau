@@ -74,7 +74,7 @@ De documentatie van LaSuite is moeilijk te vinden. Ook is lastig te achterhalen 
 
 Alle componenten van LaSuite worden SaaS aangeboden. Er is geen informatie beschikbaar om de volledige suite te hosten. Bij een aantal producten zijn helm charts beschikbaar die we kunnen gebruiken om die applicaties op kubernetes te installeren. We zullen dus de componenten apart moeten bekijken.
 
-Voordat je kan beginnen met LaSuite moet men eerste een identity provider hebben. We hebben voor KeyCloak gekozen omdat de developers hier al mee bekend zijn
+Voordat je kan beginnen met LaSuite moet men eerste een identity provider hebben. We hebben voor KeyCloak gekozen omdat de developers hier al mee bekend zijn. Om het inlogproces in Rijksoverheid huisstijl te tonen hebben we gebruik gemaakt van [ROOS](https://nl-design-system.github.io/rvo/docs/) van RVO. Dit is de implementatie van het NL Design System die het meest volwassen en toepasbaar is. Wel is het de vraag of dit toekomstvast is omdat het voor RVO ontwikkeld wordt en niet voor andere overheidsorganisaties. Take-aways hierbij zijn dat het verstandig is om de flow en layout van Keycloak te volgen.
 
 Meet heeft real time verbindingen nodig die niet makkelijk over ingress gaan. Dus je moet een goed begrip hebben van het netwerk om deze goed te installeren. 
 
