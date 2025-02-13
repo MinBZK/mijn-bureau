@@ -96,6 +96,7 @@ TChap: Het kan even duren voordat rooms(chat groepen) gesynced zijn met alle and
 - Grist support custom styling
 - Grist is open source en dus aan te passen als nodig.
 - Docs is open source en dus aan te passen als nodig.
+  - Het [upgrade proces](https://github.com/suitenumerique/docs/blob/main/UPGRADE.md) is nog niet duidelijk beschreven en handmatig upgraden kan foutmeldingen opleveren.
 - Meet is open source en dus aan te passen als nodig.
 - TChap is open source en dus aan te passen als nodig. 
 
