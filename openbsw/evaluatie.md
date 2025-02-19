@@ -58,9 +58,9 @@ LaSuite bestaat uit de componenten:
 | WebConf          | Video Meetings            | jitsi                        | ?                                                               |
 | Resana           | Office suite              | Interstis  (niet opensource) | ?                                                               |
 | AudioConf        | Bellen                    | ?                            | ?                                                               |
-| Grist            | Collaborative spreadsheet |  grist                       | https://github.com/numerique-gouv/helm-charts/tree/main/charts  |
-| Docs             | Notities                  |  BlocNote.js                 | https://github.com/numerique-gouv/impress                       |
-| Messaging        | MailBox & Calander        | ?                            | ?                                                               |
+| Grist            | Collaborative spreadsheet | grist                        | https://github.com/numerique-gouv/helm-charts/tree/main/charts  |
+| Docs             | Notities                  | BlocNote.js                  | https://github.com/numerique-gouv/impress                       |
+| Messaging        | MailBox & Calander        | OpenXchange                  | ?                                                               |
 
 Onze Franse collega's vertelden dat ze van plan zijn de technology onder Webinar en WebConf te vervangen door [liveKit](https://github.com/livekit/livekit) - [source code](https://github.com/numerique-gouv/meet).
 
@@ -76,20 +76,23 @@ Alle componenten van LaSuite worden SaaS aangeboden. Er is geen informatie besch
 
 Voordat je kan beginnen met LaSuite moet men eerste een identity provider hebben. We hebben voor KeyCloak gekozen omdat de developers hier al mee bekend zijn. Om het inlogproces in Rijksoverheid huisstijl te tonen hebben we gebruik gemaakt van [ROOS](https://nl-design-system.github.io/rvo/docs/) van RVO. Dit is de implementatie van het NL Design System die het meest volwassen en toepasbaar is. Wel is het de vraag of dit toekomstvast is omdat het voor RVO ontwikkeld wordt en niet voor andere overheidsorganisaties. Take-aways hierbij zijn dat het verstandig is om de flow en layout van Keycloak te volgen.
 
-Meet heeft real time verbindingen nodig die niet makkelijk over ingress gaan. Dus je moet een goed begrip hebben van het netwerk om deze goed te installeren. 
+Meet heeft real time verbindingen nodig die niet makkelijk over ingress gaan. Dus je moet een goed begrip hebben van het netwerk om deze goed te installeren.
 
-Als we het over TChap hebben hieronder bedoelen we eigenlijk element synapse matrix implementatie incusief the clients voor web, mobile and pc van element. 
+Als we het over TChap hebben hieronder bedoelen we eigenlijk element synapse matrix implementatie incusief the clients voor web, mobile and pc van element.
+
+Als alternatief voor Resana hebben we nextcloud + collabora online uitgetest omdat resana geen open source product is. Hierbij testen we de features file storage & Sharing en online co-editing. Andere features zoals agenda etc kan ook in nextcloud maar hebben we niet uitgetest.
 
 #### Performance Efficiency
 
 Grist heeft minimaal 0.6 cpu aan resources nodig voor de database, anders is hij onbruikbaar traag
 AI-webservice: deze heeft GPUs nodig anders is het te traag
-TChap: Het kan even duren voordat rooms(chat groepen) gesynced zijn met alle andere homeservers. 
+TChap: Het kan even duren voordat rooms(chat groepen) gesynced zijn met alle andere homeservers.
 
 #### Security
 
 - Grist heeft sandbox opties voor kubernetes
 - TChap maakt gebruikt van OLM encyptie
+- Nextcloud & Collabora secure krijgen heeft een significante effort nodig.
 
 #### Maintainability
 
@@ -98,7 +101,9 @@ TChap: Het kan even duren voordat rooms(chat groepen) gesynced zijn met alle and
 - Docs is open source en dus aan te passen als nodig.
   - Het [upgrade proces](https://github.com/suitenumerique/docs/blob/main/UPGRADE.md) is nog niet duidelijk beschreven en handmatig upgraden kan foutmeldingen opleveren.
 - Meet is open source en dus aan te passen als nodig.
-- TChap is open source en dus aan te passen als nodig. 
+- TChap is open source en dus aan te passen als nodig.
+- Nextcloud kan custom styling krijgen en is open source dus aan te passen als nodig
+- collabora is open source en dus aan te passen als nodig
 
 #### Flexibility
 
@@ -109,7 +114,12 @@ TChap: Het kan even duren voordat rooms(chat groepen) gesynced zijn met alle and
 - Meet support single sign on
 - TChap support Single sign on
 - Tchap kan integreren met verschillende video conferenctie tools
-- Tchap admin panel valt onder betaalde licentie. 
+- Tchap admin panel valt onder betaalde licentie.
+- NextCloud heeft vele apps die geinstalleerd kunnen worden.
+- NextCloud kan eigen apps toegevoegd krijgen
+- NextCloud heeft apps voor standard protocollen zoals OpenID Connect
+- NextCloud heeft support voor open document formaten (ODF)
+- Collabora heeft support voor WOPI. Dat is voor externe storage zoals NextCloud, Owncloud, SharePoint & wordpress en vele anderen
 
 #### Reliability
 
@@ -118,6 +128,7 @@ TChap: Het kan even duren voordat rooms(chat groepen) gesynced zijn met alle and
 - Docs heeft integratie met sentry
 - Meet heeft integratie met s3
 - Tchap heeft detail telemetry
+- Nextcloud heeft detailed telemetry
 
 #### Compatibility
 
@@ -134,6 +145,9 @@ TChap: Het kan even duren voordat rooms(chat groepen) gesynced zijn met alle and
 - Meet heeft AI support compatible met OpenAI Interface
 - AI-webservice ollama support openai interface wat er voor zorgt dat andere tool makkelijk kunnen integreren.
 - Tchap volgt the matrix standard voor chat
+- NextCloud heeft federation sharing. Dit is gebaseerd op OpenCloudMesh standard
+- NextCloud heef WebDAV support.
+- NextCloud kan S3 compatible storage gebruiken.
 
 ## Evaluatie OpenDesk
 
