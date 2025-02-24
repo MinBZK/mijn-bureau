@@ -1,4 +1,4 @@
-# OpenBSW evaluatie
+# Evalutatie Open BSW
 
 Er worden **technische** beproevingen gedaan van oplossingen zoals LaSuite & OpenDesk. Hieronder worden de bevindingen bijgehouden. Elke evaluatie kan op verschillende niveaus gedaan worden, namelijk:
 

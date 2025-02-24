@@ -1,10 +1,12 @@
-# Mijn Bureau
+# Mijn Bureau project repository
 
-Met Mijn Bureau onderzoeken we open source kantoorsoftware voor, door en met overheden.
+Met [Mijn Bureau](index.md) onderzoeken we open source kantoorsoftware voor, door en met overheden.
 
 Mijn Bureau is een samenwerking van de Rijksoverheid, Gemeente Amsterdam en de Vereniging Nederlandse Gemeenten.
 
-Vanuit de Rijksoverheid werkt het projectteam van Open BSW van het programma Beter SamenWerken aan Mijn Bureau. Zij documenteren hun werkwijze, proces en geleerde lessen in deze repository in de [map openbsw](openbsw/index.md).
+Vanuit de Rijksoverheid werkt het projectteam van Open BSW van het programma Beter Samen Werken aan Mijn Bureau. Zij documenteren hun werkwijze, proces en geleerde lessen in deze repository in de [map openbsw](openbsw/index.md).
+
+[Wat is Mijn Bureau?](index.md)
 
 ## Lifecycle fases voor broncode
 
