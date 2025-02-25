@@ -450,20 +450,14 @@ betrokken.
 Bij dreigende overschrijding van onderstaande toleranties zal de
 exceptie procedure in werking treden:
 
-  -----------------------------------------------------------------------
-  **Onderdeel**          **Bedrag**
-  ---------------------- ------------------------------------------------
-  Geld                   +10%
+| Onderdeel   | Bedrag                                             |
+|-------------|----------------------------------------------------|
+| Geld        | +10%                                               |
+| Tijd        | +1 maand                                           |
+| Organisatie | Capaciteitstekort dat projectdoel in gevaar brengt |
+| Kwaliteit   | Afgesproken resultaat kan niet worden gehaald      |
+| Informatie  | Niet van toepassing                                |
 
-  Tijd                   +1 maand
-
-  Organisatie            Capaciteitstekort dat projectdoel in gevaar
-                         brengt
-
-  Kwaliteit              Afgesproken resultaat kan niet worden gehaald
-
-  Informatie             Niet van toepassing
-  -----------------------------------------------------------------------
 
 ## 3.7 Randvoorwaarden
 
@@ -525,52 +519,17 @@ Zie Programmaplan.
 
 Het kernteam van het project bestaat uit:
 
-+-----------------+-----------------+---------------------------------+
-| **Rol**         |  **Wie**        |   **Taken, bevoegdheden,        |
-|                 |                 |   verantwoordelijkheden**       |
-+=================+=================+=================================+
-| Product Owner   |                 |   Backlogmanagement             |
-|                 |                 |                                 |
-|                 |                 |                                 |
-|                 |                 |                                 |
-|                 |                 |                                 |
-+-----------------+-----------------+---------------------------------+
-| Scrum master    |                 | Toepassen en coachen van        |
-|                 |                 |[Professional Scrum with         |
-|                 |                 | Kanban](https://www.scrum       |
-|                 |                 | .org/assessments/professional-s |
-|                 |                 | crum-with-kanban-certification) |
-+-----------------+-----------------+---------------------------------+
-| Project manager |                 | In lijn met het Programma:      |
-|                 |                 | managen van het project         |
-|                 |                 |                                 |
-|                 |                 |                                 |
-|                 |                 |                                 |
-+-----------------+-----------------+---------------------------------+
-| CIO/Architect   |                 | Advies                          |
-|                 |                 |                                 |
-|                 |                 |                                 |
-|                 |                 |                                 |
-|                 |                 |                                 |
-+-----------------+-----------------+---------------------------------+
-| Engineer 1      |                 | Realisatie PoC alsmede          |
-|                 |                 | technisch architect             |
-|                 |                 |                                 |
-|                 |                 |                                 |
-|                 |                 |                                 |
-+-----------------+-----------------+---------------------------------+
-| Engineer 2      |                 | Realisatie PoC                  |
-|                 |                 |                                 |
-|                 |                 |                                 |
-|                 |                 |                                 |
-|                 |                 |                                 |
-|                 |                 |                                 |
-|                 |                 |                                 |
-|                 |                 |                                 |
-|                 |                 |                                 |
-|                 |                 |                                 |
-|                 |                 |                                 |
-+-----------------+-----------------+---------------------------------+
+| Rol                                                     | Wie                     | Taken, bevoegdheden, verantwoordelijkheden |
+|---------------------------------------------------------|-------------------------|--------------------------------------------|
+| Product Owner                                           | Boris       | Backlogmanagement                            |
+| Scrum master                                            | Rik                | Toepassen en coachen van Professional Scrum with Kanban |
+|                                                         |
+| Project manager                                         | Rik                | In lijn met het Programma: managen van het project      |
+| CIO/Architect                                           | Peter              | Advies                                                  |
+| Engineer 1                                              | Berry        | Realisatie PoC alsmede technisch architect              |
+| Engineer 2                                              | Eric  | Realisatie PoC                                          |
+
+
 
 ### 4.2.2 Werkgroepen
 
@@ -601,17 +560,11 @@ Voortgangsrapportage vind plaats middels
 
 ## 4.5 Relaties met andere projecten
 
-  -----------------------------------------------------------------------
-  **Project of onderdeel**   **Relatie**
-  -------------------------- --------------------------------------------
-  BSW                        Project maakt hier onderdeel van uit
-
-  La Dinum                   Project onderzoekt verdere samenwerking met
-                             het Franse Open Source initiatief
-
-  ZenDis                     Project onderzoekt verdere samenwerking met
-                             het Franse Open Source initiatief
-  -----------------------------------------------------------------------
+| Project of onderdeel | Relatie                                                                       |
+|----------------------|-------------------------------------------------------------------------------|
+| BSW                  | Project maakt hier onderdeel van uit                                          |
+| La Dinum             | Project onderzoekt verdere samenwerking met het Franse Open Source initiatief |
+| ZenDis               | Project onderzoekt verdere samenwerking met het Franse Open Source initiatief |
 
 # 5 Projectplan 
 
@@ -645,44 +598,25 @@ Zie paragraaf 1.2.
 
 ### 5.5.1 Product breakdown en de hoofdlijnen (producten)planning met go/nogo momenten
 
-+----------------+-----------------------------------------------------+
-| > 1            | > Organisatie en informatie                         |
-+================+=====================================================+
-| > 1.1          | > Samenwerkomgeving ingericht                       |
-+----------------+-----------------------------------------------------+
-| > 1.2          | > Werkgroep ingericht                               |
-+----------------+-----------------------------------------------------+
-| > 1.3          | > Kernteam ingericht                                |
-+----------------+-----------------------------------------------------+
-| > 1.4          | > Github ingericht                                  |
-+----------------+-----------------------------------------------------+
+| 1   | Organisatie en informatie                               |
+|-----|---------------------------------------------------------|
+| 1.1 | Samenwerkomgeving ingericht                             |
+| 1.2 | Werkgroep ingericht                                     |
+| 1.3 | Kernteam ingericht                                      |
+| 1.4 | Github ingericht                                        |
 
-+----------------+-----------------------------------------------------+
-| > 2            | > PoC uitvoeren                                     |
-+================+=====================================================+
-| > 2.1          | > Infrastructure bij Digi Lab obv Haven             |
-+----------------+-----------------------------------------------------+
-| > 2.2          | > TChap                                             |
-+----------------+-----------------------------------------------------+
-| > 2.3          | > OpenDesk                                          |
-+----------------+-----------------------------------------------------+
-| > 2.4          | > LaSuite                                           |
-+----------------+-----------------------------------------------------+
-| > 2.5          | > Command Ground elementen                          |
-+----------------+-----------------------------------------------------+
-| > 2.6          | > PoC opgeruimd                                     |
-+----------------+-----------------------------------------------------+
+| 2   | PoC uitvoeren                                           |
+| 2.1 | Infrastructure bij Digi Lab obv Haven                   |
+| 2.2 | TChap                                                   |
+| 2.3 | OpenDesk                                                |
+| 2.4 | LaSuite                                                 |
+| 2.5 | Command Ground elementen                                |
+| 2.6 | PoC opgeruimd                                           |
 
-+----------------+-----------------------------------------------------+
-| > 3            | > PoC uitvoeren                                     |
-+================+=====================================================+
-| > 3.1          | > Evaluatie van de beproeving                       |
-+----------------+-----------------------------------------------------+
-| > 3.2          | > Nadere selectie van projecten om specifiek te     |
-|                | > beproeven                                         |
-+----------------+-----------------------------------------------------+
-| > 3.3          | > Aandachtspunten voor bredere ingebruikname        |
-+----------------+-----------------------------------------------------+
+| 3   | PoC uitvoeren                                           |
+| 3.1 | Evaluatie van de beproeving                             |
+| 3.2 | Nadere selectie van projecten om specifiek te beproeven |
+| 3.3 | Aandachtspunten voor bredere ingebruikname              |
 
 ### 5.5.2 Detailplanning 2025
 
@@ -696,30 +630,15 @@ Zie paragraaf 1.2.
 
 ## 6.1 Kenmerken projectbeheersing 
 
-+---------------------+------------------------------------------------+
-| **Onderdeel**       | **Bedrag**                                     |
-+=====================+:===============================================+
-| Geld                | Wordt op programma niveau beheerst             |
-+---------------------+------------------------------------------------+
-| Tijd                | Daily Kanban, GitHub en                        |
-|                     | [FCC](h                                        |
-|                     | ttps://digitalesamenleving.fortes-online.com/) |
-+---------------------+------------------------------------------------+
-| Organisatie         | Daily Kanban                                   |
-+---------------------+------------------------------------------------+
-| Kwaliteit           | Daily Kanban, demo, Pull Request procedure,    |
-|                     | Prettier, vier ogen principes, Definition of   |
-|                     | Ready, Definition of done                      |
-+---------------------+------------------------------------------------+
-| Informatie          | Opbouw van de verschillende rapporten gebeurt  |
-|                     | in Github op basis van Mark Down files.        |
-|                     |                                                |
-|                     | Project documentatie conform PRINCE2 vind      |
-|                     | plaats in de [samenwerkingsruimte              |
-|                     | BS                                             |
-|                     | W](https://www.samenwerkruimten.nl/teamsites/w |
-|                     | erkgroep_requirements_csp/SitePages/Home.aspx) |
-+---------------------+------------------------------------------------+
+| Onderdeel                                                                      | Bedrag                                                                                                             |
+|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| Geld                                                                           | Wordt op programma niveau beheerst                                                                                 |
+| Tijd                                                                           | Daily Kanban, GitHub en FCC                                                                                        |
+|                                                                                |
+| Organisatie                                                                    | Daily Kanban                                                                                                       |
+| Kwaliteit                                                                      | Daily Kanban, demo, Pull Request procedure, Prettier, vier ogen principes, Definition of Ready, Definition of done |
+| Informatie                                                                     | Opbouw van de verschillende rapporten gebeurt in Github op basis van Mark Down files.                              |
+| Project documentatie conform PRINCE2 vind plaats in de samenwerkingsruimte BSW |
 
 ## 6.2 Quality Assurance
 

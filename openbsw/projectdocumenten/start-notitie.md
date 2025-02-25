@@ -10,7 +10,7 @@ min mogelijk leveranciersafhankelijkheid hebben en dat we op later
 moment de aangeschafte en/of (her)gebruikte componenten relatief
 makkelijk kunnen vervangen.
 
-In dat kader is ook gesproken om een *Proof of Concept* (PoC) te gaan
+In dat kader is ook gesproken om een _Proof of Concept_ (PoC) te gaan
 doen rondom de mogelijkheden van Open Source. Dit mogelijk ter
 vervanging van componenten, maar ook als mitigerende maatregel voor een
 aantal benoemde risico's.
@@ -20,18 +20,18 @@ daar voor nodig is om te komen tot een PoC Open BSW.
 
 **Kern**
 
-Het doel van open BSW is om als *Proof of Concept* een uitwerking van
+Het doel van open BSW is om als _Proof of Concept_ een uitwerking van
 Beter Samen Werken (BSW) functionaliteiten in te richten die de
 autonomie van de overheid versterkt met open source.
 
 Het realiseren van een PoC Open source sluit ook aan bij het advies van
 AcICT waarbij zij aangeven:
 
-> *"Werk parallel aan een plan B voor die gevallen dat de conclusie ten
+> _"Werk parallel aan een plan B voor die gevallen dat de conclusie ten
 > aanzien van het inzetten van Microsoft 365 negatief is. Wij adviseren
 > u ook om met prioriteit in EU-verband te investeren in (open source)
 > alternatieven voor de langere termijn met een hoger niveau van
-> digitale veiligheid."*
+> digitale veiligheid."_
 
 In de bijlage is op hoofdlijnen het plan uitgewerkt.
 
@@ -54,7 +54,7 @@ stuurgroep gaat akkoord met:
 **Bijlage:\
 Projectplan op hoofdlijnen**
 
-# Projectdefinitie 
+# Projectdefinitie
 
 ## Achtergrond
 
@@ -66,105 +66,105 @@ oplossingen bieden.
 
 ## Projectdoelstelling
 
-Het doel van open BSW is om als *Proof of Concept* een uitwerking van
+Het doel van open BSW is om als _Proof of Concept_ een uitwerking van
 Beter Samen Werken (BSW) functionaliteiten in te richten die de
 autonomie van de overheid versterkt met open source.
 
-*In verband met de lopende en komende inkoopprocedures en de
+_In verband met de lopende en komende inkoopprocedures en de
 verscheidene belangen is het voor dit project belangrijk dat we streng
 zijn dat we enkel interne krachten gebruiken die het doel van het
-project onderschrijven en geen producten van marktpartijen betrekken.*
+project onderschrijven en geen producten van marktpartijen betrekken._
 
 ### Uitgangspunten
 
--   Volgens kernprincipes digitale overheid[^1]: hergebruik, open
-    standaarden, en open source.
+- Volgens kernprincipes digitale overheid[^1]: hergebruik, open
+  standaarden, en open source.
 
--   Hergebruikt open source van overheden: van de Franse en Duitse open
-    source samenwerksoftware en andere overheidssoftware zoals van de
-    VNG en Europese Commissie.
+- Hergebruikt open source van overheden: van de Franse en Duitse open
+  source samenwerksoftware en andere overheidssoftware zoals van de
+  VNG en Europese Commissie.
 
--   Werkt waar mogelijk samen met andere overheden en geeft indien
-    opportuun verbeteringen terug.
+- Werkt waar mogelijk samen met andere overheden en geeft indien
+  opportuun verbeteringen terug.
 
--   Geïntegreerd en voelt als 1 applicatie.
+- Geïntegreerd en voelt als 1 applicatie.
 
--   Houd volledige controle over alle gegevens, informatie en processen.
+- Houd volledige controle over alle gegevens, informatie en processen.
 
--   Draait op een Haven infrastructuur en kan daarmee op alle
-    compatibele (eigen) clouds werken.
+- Draait op een Haven infrastructuur en kan daarmee op alle
+  compatibele (eigen) clouds werken.
 
--   Past opensourcewerken volledig toe en draagt bij aan gebruikte
-    projecten.
+- Past opensourcewerken volledig toe en draagt bij aan gebruikte
+  projecten.
 
--   Werkt samen met een brede verscheidenheid aan stakeholders binnen de
-    overheid, vergelijkbare projecten en bedrijven.
+- Werkt samen met een brede verscheidenheid aan stakeholders binnen de
+  overheid, vergelijkbare projecten en bedrijven.
 
--   Sluit aan bij andere beleidsdoelstellingen uit de werkagenda en
-    onder andere programma's Digitale Gemeenschapsgoederen, Open Source,
-    Open op Orde, Grenzeloos Samenwerken en Data bij de Bron.
+- Sluit aan bij andere beleidsdoelstellingen uit de werkagenda en
+  onder andere programma's Digitale Gemeenschapsgoederen, Open Source,
+  Open op Orde, Grenzeloos Samenwerken en Data bij de Bron.
 
 ## Gewenste eindresultaten
 
--   Werkend en werkbare uitwerking van BSW door maximaal hergebruik van
-    open source oplossingen met opensourcewerken is neergezet.
+- Werkend en werkbare uitwerking van BSW door maximaal hergebruik van
+  open source oplossingen met opensourcewerken is neergezet.
 
--   Evaluatie van de beproeving, ervaringen en relatie tot de eisen in
-    BSW met rapportage over de vergelijkingen met andere
-    samenwerksoftware.
+- Evaluatie van de beproeving, ervaringen en relatie tot de eisen in
+  BSW met rapportage over de vergelijkingen met andere
+  samenwerksoftware.
 
--   Nadere selectie van projecten om specifiek te beproeven, met analyse
-    op de bruikbaarheid, risico's en verhouding tot de rest van het BSW
-    project.
+- Nadere selectie van projecten om specifiek te beproeven, met analyse
+  op de bruikbaarheid, risico's en verhouding tot de rest van het BSW
+  project.
 
--   Aandachtspunten voor bredere ingebruikname waaronder implementatie,
-    beheer en doorontwikkeling.
+- Aandachtspunten voor bredere ingebruikname waaronder implementatie,
+  beheer en doorontwikkeling.
 
 ## Project scope en afbakening
 
--   Het uitproberen van een werkend samenwerkingssysteem naar de doelen
-    van BSW als Proof Of Concept (PoC).
+- Het uitproberen van een werkend samenwerkingssysteem naar de doelen
+  van BSW als Proof Of Concept (PoC).
 
--   PoC is niet gekoppeld met bestaande systemen. Wel pad naar
-    koppelingen uitgewerkt.
+- PoC is niet gekoppeld met bestaande systemen. Wel pad naar
+  koppelingen uitgewerkt.
 
--   PoC is niet bedoeld om de schaal van BSW aan te kunnen, moet goed
-    werken voor enkele gebruikers. Wel pad naar schaling uitgewerkt.
+- PoC is niet bedoeld om de schaal van BSW aan te kunnen, moet goed
+  werken voor enkele gebruikers. Wel pad naar schaling uitgewerkt.
 
--   PoC bevat alle gangbare en geavanceerde maatregelen voor
-    informatiebeveiliging maar word niet actief beveiligd.
+- PoC bevat alle gangbare en geavanceerde maatregelen voor
+  informatiebeveiliging maar word niet actief beveiligd.
 
--   Functionaliteit vergelijkbaar met:
+- Functionaliteit vergelijkbaar met:
 
-    -   Microsoft Office: word processing, spreadsheets en presentaties
+  - Microsoft Office: word processing, spreadsheets en presentaties
 
-    -   Microsoft Teams: chat en bellen
+  - Microsoft Teams: chat en bellen
 
-    -   Microsoft Exchange: mail en agenda
+  - Microsoft Exchange: mail en agenda
 
-    -   Cisco Webex: videobellen
+  - Cisco Webex: videobellen
 
-    -   Microsoft SharePoint: bestanden delen
+  - Microsoft SharePoint: bestanden delen
 
--   Geïntegreerde samenwerkfunctionaliteit om gelijktijdig in documenten
-    te werken, hier over te kunnen communiceren en deze op te slaan.
+- Geïntegreerde samenwerkfunctionaliteit om gelijktijdig in documenten
+  te werken, hier over te kunnen communiceren en deze op te slaan.
 
--   Geen of beperkte functionaliteit die van o.a. RvIHH kan worden
-    hergebruikt volgens BSW zonder publieke documentatie:
+- Geen of beperkte functionaliteit die van o.a. RvIHH kan worden
+  hergebruikt volgens BSW zonder publieke documentatie:
 
-    -   Document generator
+  - Document generator
 
-    -   Zoek en Vind
+  - Zoek en Vind
 
-    -   Tijdelijk dossier systeem
+  - Tijdelijk dossier systeem
 
-    -   Digitale handtekening
+  - Digitale handtekening
 
-    -   Laksysteem
+  - Laksysteem
 
-    -   RMA
+  - RMA
 
-    -   Website, email, social media en chatarchivering
+  - Website, email, social media en chatarchivering
 
 ## Beoogde projecten voor hergebruik
 
@@ -265,29 +265,33 @@ verbinding met de bestaande systemen, kennis van zaken en kennisopbouw.
 
 ## Planning
 
-  -----------------------------------------------------------------------
-  *Activiteit op hoofdlijnen*                                   *Tijdpad*
-  ---------------------------------------------------- ------------------
-  Begin projectleider                                        oktober 2024
+---
 
-  Begin werkgroep, Kick-off event o.l.v. OSPO              September 2024
+_Activiteit op hoofdlijnen_ _Tijdpad_
 
-  Begin ontwikkelaars en beheerders                          Oktober 2024
+---
 
-  Presentatie 1e versie met als doel PoC                     Januari 2025
+Begin projectleider oktober 2024
 
-  Presentatie 1e versie met als doel verhogen               Februari 2025
-  acceptatie                                           
+Begin werkgroep, Kick-off event o.l.v. OSPO September 2024
 
-  Presentatie 1e versie met als doel dekken                    April 2025
-  functionaliteit                                      
+Begin ontwikkelaars en beheerders Oktober 2024
 
-  Presentatie 1e versie met als doel verhogen                    Mei 2025
-  acceptatie                                           
+Presentatie 1e versie met als doel PoC Januari 2025
 
-  Oplevering resultaten, presentatie, servers                   Juni 2025
-  uitzetten                                            
-  -----------------------------------------------------------------------
+Presentatie 1e versie met als doel verhogen Februari 2025
+acceptatie
+
+Presentatie 1e versie met als doel dekken April 2025
+functionaliteit
+
+Presentatie 1e versie met als doel verhogen Mei 2025
+acceptatie
+
+Oplevering resultaten, presentatie, servers Juni 2025
+uitzetten
+
+---
 
 # Projectorganisatie
 
@@ -326,9 +330,11 @@ Betrokkenheid: Proberen gedurende 5 maanden een deel van het reguliere
 werk te voldoen met de open BSW applicaties en periodiek hier over
 feedback geven.
 
-[^1]: [Werkagenda Waardengedreven
+[^1]:
+    [Werkagenda Waardengedreven
     Digitaliseren](https://www.rijksoverheid.nl/documenten/rapporten/2023/12/22/geactualiseerde-werkagenda-waardengedreven-digitaliseren-2024)
     (van Huffelen, 2024)
 
-[^2]: [Implementatiekader risicoafweging
+[^2]:
+    [Implementatiekader risicoafweging
     cloudgebruik](https://open.overheid.nl/documenten/ronl-734f947ec6465e4f75a56bed82fe64a1135f71a8/pdf)
