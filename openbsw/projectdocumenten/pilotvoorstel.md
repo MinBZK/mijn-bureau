@@ -11,7 +11,7 @@ Het voorstel is om extra budget beschikbaar te stellen voor pilots onder OpenBSW
 
 In de pilot willen we gebruikers toegang gaan geven tot geselecteerde producten uit de Proof of Concept. Hierbij is het belangrijk dat de producten neergezet wordt zodat ze aan de wet- en regelgeving die van toepassing is voldoen. Verder willen we kijken of het product binnen de BSW architectuur past en welke stappen nodig zijn als deze nog niet past.
 
-Met het extra budget creëren we een pilot team. Ook gebruiken we het budget voor het afnemen van computers bij overheidsdatacenters en kunnen we Enterprise licenties (van open source producten) inkopen waar dit nodig is om de doelen van de pilot te behalen.
+Met het extra budget creëren we een pilot team. Ook gebruiken we het budget voor het afnemen van computers bij overheidsdatacenters en kunnen dienstverlening rond open source producten inkopen waar dit nodig is om de doelen van de pilot te behalen.
 
 Ons voorstel voor het pilotproject is om de tijd en middelen vast te zetten, terwijl we de scope flexibel houden. De producten die geprioriteerd worden, kunnen we per product via een nota afstemmen met de stuurgroep, zodat we de nodige flexibiliteit behouden. In deze nota beschrijven we bevindingen van de PoC en beschrijven we ontwikkel, UX-onderzoek, security en operations werkzaamheden.  Zowel het team als de stuurgroep kunnen voorstellen doen voor pilot producten.
 
@@ -30,7 +30,7 @@ Om het onderzoek waardevol te houden moeten voor alle pilot producten kaders aan
 
 * Product draait op Rijksdatacenter
 * Containerisatie boven Virtualisatie
-* Opensource tenzij methodiek
+* Open source als voorwaarde
 * Product installatie & Beheer wordt declaratief opgezet 
 * Product installatie & Beheer wordt opensource ontwikkeld 
 * Informatie-uitwisseling gebeurt met open standaarden
