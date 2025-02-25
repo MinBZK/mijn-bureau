@@ -11,7 +11,7 @@ en interactief te communiceren (zowel via videobellen als chat). Deze
 voorzieningen kunnen ter ondersteuning van het samenwerken of op
 zichzelf staand worden toegepast.
 
-## Cloud Soevereine oplossingen 
+## Cloud Soevereine oplossingen
 
 Voor een cloud-soevereine oplossing is het essentieel dat organisaties
 volledige controle hebben over waar hun producten worden gehost en waar
@@ -34,7 +34,7 @@ In onderstaande tabel zijn de functies toegelicht zoals gedefinieerd in
 de BSW architectuur voor applicatiedienst Samenwerkruimte.
 
 | Functie                                      | Omschrijving                                                                                                                              |
-|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | channel.virtual.collaboration                | Kanaal voor het groeperen van activiteiten, documenten, chatsessies, taken en andere hulpmiddelen voor het samenwerken binnen teams.      |
 | task handling.collaboration                  | Digitaal planbord voor het registreren, documenteren, aanwijzen en opvolgen van taken.                                                    |
 | meeting room.virtual.collaboration           | Digitale omgeving voor het houden van online vergaderingen.                                                                               |
@@ -96,7 +96,7 @@ niet uitputtend, maar geeft een indicatie van de mogelijkheden voor
 cloud-soevereine oplossingen.
 
 | Product      | Files | Audio conferentie | Video Conferentie | Chat | Kalender | Contacten | Mail | Office (spreadsheat, presentaties en text documenten) | Taken |
-|--------------|-------|-------------------|-------------------|------|----------|-----------|------|-------------------------------------------------------|-------|
+| ------------ | ----- | ----------------- | ----------------- | ---- | -------- | --------- | ---- | ----------------------------------------------------- | ----- |
 | NextCloud    | X     | X                 | X                 | X    | X        | X         | X    | X                                                     | X     |
 | Libreoffice  |       |                   |                   |      |          |           |      | X                                                     |       |
 | Open-Xchange |       |                   |                   |      | x        | x         | x    |                                                       | X     |
