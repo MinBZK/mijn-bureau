@@ -4,8 +4,8 @@
 
 Het OpenBSW team heeft een op Kanban geinspireerde werkwijze met de volgende rituelen:
 
-* Dagelijkse meeting
-* Wekelijkse demo waarna we de prioriteiten doorspreken
+- Dagelijkse meeting
+- Wekelijkse demo waarna we de prioriteiten doorspreken
 
 Wat we hebben beproeft en wat we hebben geleerd schrijven we op in [de evaluatie](evaluatie.md).
 
@@ -25,39 +25,39 @@ Tijdens het ontwikkelen houden we een aantal standaarden aan zodat we zorgen voo
 ## Definition of Ready:
 
 1. Beschrijving
-   * De taak heeft een beschrijving van het probleem of de gewenste functionaliteit in een `Intro` kop.
+   - De taak heeft een beschrijving van het probleem of de gewenste functionaliteit in een `Intro` kop.
 2. Acceptatie criteria
-   * Duidelijke en meetbare acceptatie criteria zijn opgesteld en gedocumenteerd in `Acceptatie Criteria` kop.
+   - Duidelijke en meetbare acceptatie criteria zijn opgesteld en gedocumenteerd in `Acceptatie Criteria` kop.
 3. Schatting
-   * De taak heeft een schatting in de vorm van punten gekregen.
+   - De taak heeft een schatting in de vorm van punten gekregen.
 4. Prioriteit
-   * De prioriteit en eventuele afhankelijkheden met andere taken zijn aangegeven. 
-   * De prioriteit wordt bepaald door de locatie in de backlog. Bovenaan is hoge prioriteit, onderaan is lage prioriteit.
+   - De prioriteit en eventuele afhankelijkheden met andere taken zijn aangegeven.
+   - De prioriteit wordt bepaald door de locatie in de backlog. Bovenaan is hoge prioriteit, onderaan is lage prioriteit.
 5. Techniek
-   * Complexe onderdelen zijn geanalyseerd via een refinement en beschreven onder `Implementation Details`.
+   - Complexe onderdelen zijn geanalyseerd via een refinement en beschreven onder `Implementation Details`.
 
 ## Definition of Done:
 
 1. Code Kwaliteit
-   * Code is gereviewd en goedgekeurd door minimaal 1 repository member
-   * Code voldoet aan de [google style guidelines](https://google.github.io/styleguide/)
-   * Unittests zijn geschreven voor alle nieuwe of aangepaste code, met een dekking van ten minste 80%
-   * Code wordt door sonarcloud geanalyseerd op problemen
-   * Alle code review comments zijn beantwoord of gesloten
-   * Code wordt door een linter, formatter en typechecker gehaald, de specifieke tools kunnen per repo gekozen worden
+   - Code is gereviewd en goedgekeurd door minimaal 1 repository member
+   - Code voldoet aan de [google style guidelines](https://google.github.io/styleguide/)
+   - Unittests zijn geschreven voor alle nieuwe of aangepaste code, met een dekking van ten minste 80%
+   - Code wordt door sonarcloud geanalyseerd op problemen
+   - Alle code review comments zijn beantwoord of gesloten
+   - Code wordt door een linter, formatter en typechecker gehaald, de specifieke tools kunnen per repo gekozen worden
 2. Documentatie
-   * Bevindingen van PoC word gedocumenteerd op de [evaluatie pagina](openbsw/evaluatie.md)
-   * Eigen gemaakte Functionaliteiten zijn gedocumenteerd in de github repository, bij voorkeur in een markdown file.
-   * Documentatie wordt door een formatter gehaald, de specifieke tool kan per repo gekozen worden
+   - Bevindingen van PoC word gedocumenteerd op de [evaluatie pagina](openbsw/evaluatie.md)
+   - Eigen gemaakte Functionaliteiten zijn gedocumenteerd in de github repository, bij voorkeur in een markdown file.
+   - Documentatie wordt door een formatter gehaald, de specifieke tool kan per repo gekozen worden
 3. Testen
-   * Testen draaien in de Continuous Integration github action
-   * Alle unit-tests, integratietests en end-to-end-tests slagen
-   * Er wordt voldaan aan de acceptatiecriteria die in de taak zijn gedefinieerd en deze zijn getest.
+   - Testen draaien in de Continuous Integration github action
+   - Alle unit-tests, integratietests en end-to-end-tests slagen
+   - Er wordt voldaan aan de acceptatiecriteria die in de taak zijn gedefinieerd en deze zijn getest.
 4. Compliance
-   * Er zijn geen gevonden CVSS v4.0 >= 9.0 security issues onopgelost gebleven.
-   * Er is een automatische licentie check gedaan op de gebuikte software componenten
-   * Er is een Software Bill of Materials gemaakt voor iedere release
-   * Er wordt een automatische accessibility check gedaan
+   - Er zijn geen gevonden CVSS v4.0 >= 9.0 security issues onopgelost gebleven.
+   - Er is een automatische licentie check gedaan op de gebuikte software componenten
+   - Er is een Software Bill of Materials gemaakt voor iedere release
+   - Er wordt een automatische accessibility check gedaan
 
 ## Commit messages
 
@@ -65,15 +65,15 @@ In softwareontwikkeling is het handhaven van duidelijke en consistente commitber
 
 Voor projecten die wij beheren moet een commit-bericht aan de volgende regels voldoen:
 
-* De onderwerpregel (eerste regel) MAG niet langer zijn dan 50 tekens
-* De onderwerpregel MOET in de gebiedende wijs staan (imperative mood)
-* Een zin MOET een hoofdletter als eerste woord hebben
-* De onderwerpregel MAG niet eindigen met een leesteken
-* De lengte van de hoofdregel MOET beperkt zijn tot 72 tekens
-* De hoofdtekst MOET door een lege regel gescheiden worden van de onderwerpregel als deze wordt gebruikt
-* De hoofdtekst MOET worden gebruikt om uit te leggen wat en waarom, niet hoe.
-* De hoofdtekst KAN eindigen met een ticketnummer
-* De onderwerpregel KAN een ticketnummer bevatten in de volgende indeling
+- De onderwerpregel (eerste regel) MAG niet langer zijn dan 50 tekens
+- De onderwerpregel MOET in de gebiedende wijs staan (imperative mood)
+- Een zin MOET een hoofdletter als eerste woord hebben
+- De onderwerpregel MAG niet eindigen met een leesteken
+- De lengte van de hoofdregel MOET beperkt zijn tot 72 tekens
+- De hoofdtekst MOET door een lege regel gescheiden worden van de onderwerpregel als deze wordt gebruikt
+- De hoofdtekst MOET worden gebruikt om uit te leggen wat en waarom, niet hoe.
+- De hoofdtekst KAN eindigen met een ticketnummer
+- De onderwerpregel KAN een ticketnummer bevatten in de volgende indeling
 
 \<ref\>-\<ticketnumber\>: onderwerpregel
 
@@ -83,10 +83,10 @@ we maken altijd een pull request om wijzigingen in een repository voor te stelle
 
 Voor projecten die wij beheren moet een pull request aan de volgende regels voldoen:
 
-* Zorg dat de title in een paar woorden duidelijk beschijft wat de PR bereikt
-* Gebruik een actiegerichte stijl in je PR
-* Referentie gerelateerde problemen of taken met een #\<nummer>
-* Vermijd redundantie
+- Zorg dat de title in een paar woorden duidelijk beschijft wat de PR bereikt
+- Gebruik een actiegerichte stijl in je PR
+- Referentie gerelateerde problemen of taken met een #\<nummer>
+- Vermijd redundantie
 
 ## Code Reviews
 
@@ -128,13 +128,13 @@ Voor project management gebruiken we [github projects](https://github.com/orgs/M
 
 Voor vastlegging gebruiken we Github Repositories onder de organisatie [MinBZK](https://github.com/orgs/MinBZK/repositories). Alle repositories die in beheer zijn van [mijn-bureau](https://github.com/orgs/MinBZK/teams/mijn-bureau/repositories) moeten publieklijk beschikbaar zijn. De repositories zijn:
 
-* [github mijn-bureau](https://github.com/MinBZK/mijn-bureau) voor documentatie.
-* [github lasuite basis](https://github.com/MinBZK/LaSuiteBasis) voor infra van basis componentent La Suite
-* [github opendesk](https://github.com/MinBZK/opendesk) voor Infra opzet van oplossing OpenDesk
-* [github leos](https://github.com/MinBZK/leos) voor bouwen en infra van Legislation Editing Open Software (LEOS)
-* [github grist](https://github.com/MinBZK/grist) voor Infra opzet van oplossing Grist (onderdeel van LaSuite)
-* [github docs](https://github.com/MinBZK/docs) voor Infra opzet van oplossing Docs (onderdeel van LaSuite)
-* [github meet](https://github.com/MinBZK/meet) voor Infra opzet van oplossing Meet (onderdeel van LaSuite)
+- [github mijn-bureau](https://github.com/MinBZK/mijn-bureau) voor documentatie.
+- [github lasuite basis](https://github.com/MinBZK/LaSuiteBasis) voor infra van basis componentent La Suite
+- [github opendesk](https://github.com/MinBZK/opendesk) voor Infra opzet van oplossing OpenDesk
+- [github leos](https://github.com/MinBZK/leos) voor bouwen en infra van Legislation Editing Open Software (LEOS)
+- [github grist](https://github.com/MinBZK/grist) voor Infra opzet van oplossing Grist (onderdeel van LaSuite)
+- [github docs](https://github.com/MinBZK/docs) voor Infra opzet van oplossing Docs (onderdeel van LaSuite)
+- [github meet](https://github.com/MinBZK/meet) voor Infra opzet van oplossing Meet (onderdeel van LaSuite)
 
 Voor formele communicatie wordt de Rijksoverheid email gebruikt.
 
