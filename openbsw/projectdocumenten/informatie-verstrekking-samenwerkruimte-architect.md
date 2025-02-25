@@ -1,4 +1,4 @@
-### Applicatiedienst Samenwerkruimte
+# Applicatiedienst Samenwerkruimte
 
 Een van de kernonderdelen van de Digitale Werkomgeving is de
 applicatiedienst Samenwerkruimte. De Samenwerkruimte is voornamelijk
@@ -28,58 +28,26 @@ draaien en hoe data wordt opgeslagen. Alternatief kan men gebruikmaken
 van diensten van bedrijven die opereren binnen lokale juridische kaders
 en de vereiste functionaliteiten bieden.
 
-### Invulling van samenwerkruimte architectuur
+## Invulling van samenwerkruimte architectuur
 
 In onderstaande tabel zijn de functies toegelicht zoals gedefinieerd in
 de BSW architectuur voor applicatiedienst Samenwerkruimte.
 
-  ------------------------------------------------------------------------------------------------------
-  Functie                                        Omschrijving
-  ---------------------------------------------- -------------------------------------------------------
-
-  channel.virtual.collaboration                  Kanaal voor het groeperen van activiteiten, documenten,
-                                                 chatsessies, taken en andere hulpmiddelen voor het
-                                                 samenwerken binnen teams.
-
-  task handling.collaboration                    Digitaal planbord voor het registreren, documenteren,
-                                                 aanwijzen en opvolgen van taken.
-
-  meeting room.virtual.collaboration             Digitale omgeving voor het houden van online
-                                                 vergaderingen.
-
-  chat.meeting room.collaboration                Uitwisseling van (persistente) korte (tekst)berichten
-                                                 tussen deelnemers van een vergadering.
-
-  library.shared content.collaboration           Bibliotheek voor het onderbrengen van (links naar)
-                                                 gedeelde informatie/informatieobjecten voor generieke
-                                                 ondersteuning van werkprocessen.
-
-  streaming.video.collaboration                  Registratie en distributie van videobeelden van
-                                                 deelnemers aan een online vergadering.
-
-  streaming.audio.collaboration                  Registratie en distributie van geluid van deelnemers
-                                                 aan een online vergadering.
-
-  recording.video&audio.collaboration            Vastleggen van beeld en geluid van een online
-                                                 vergadering.
-
-  chat.worker.collaboration                      Uitwisseling van rechtstreekse (persistente) korte
-                                                 (tekst)berichten tussen deelnemers in de
-                                                 samenwerkruimte.
-
-  file engine.collaboration                      Opslag van bestanden in de samenwerkruimte.
-
-  version handling.collaboration                 Bijhouden van versies om gebruikerswijzigingen te
-                                                 traceren, verschillen te tonen en indien gewenst terug
-                                                 te draaien.
-
-  representation creation.data object            Duplicatie van een bestand richting een formele dienst
-                                                 voor Informatieobjectbeheer, zodat het volledig onder
-                                                 het regime van deze dienst
-
-  administration.channel.virtual.collaboration   Beheer van virtuele samenwerkkanalen.
-
-  ------------------------------------------------------------------------------------------------------
+| Functie                                      | Omschrijving                                                                                                                              |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| channel.virtual.collaboration                | Kanaal voor het groeperen van activiteiten, documenten, chatsessies, taken en andere hulpmiddelen voor het samenwerken binnen teams.      |
+| task handling.collaboration                  | Digitaal planbord voor het registreren, documenteren, aanwijzen en opvolgen van taken.                                                    |
+| meeting room.virtual.collaboration           | Digitale omgeving voor het houden van online vergaderingen.                                                                               |
+| chat.meeting room.collaboration              | Uitwisseling van (persistente) korte (tekst)berichten tussen deelnemers van een vergadering.                                              |
+| library.shared content.collaboration         | Bibliotheek voor het onderbrengen van (links naar) gedeelde informatie/informatieobjecten voor generieke ondersteuning van werkprocessen. |
+| streaming.video.collaboration                | Registratie en distributie van videobeelden van deelnemers aan een online vergadering.                                                    |
+| streaming.audio.collaboration                | Registratie en distributie van geluid van deelnemers aan een online vergadering.                                                          |
+| recording.video&audio.collaboration          | Vastleggen van beeld en geluid van een online vergadering.                                                                                |
+| chat.worker.collaboration                    | Uitwisseling van rechtstreekse (persistente) korte (tekst)berichten tussen deelnemers in de samenwerkruimte.                              |
+| file engine.collaboration                    | Opslag van bestanden in de samenwerkruimte.                                                                                               |
+| version handling.collaboration               | Bijhouden van versies om gebruikerswijzigingen te traceren, verschillen te tonen en indien gewenst terug te draaien.                      |
+| representation creation.data object          | Duplicatie van een bestand richting een formele dienst voor Informatieobjectbeheer, zodat het volledig onder het regime van deze dienst   |
+| administration.channel.virtual.collaboration | Beheer van virtuele samenwerkkanalen.                                                                                                     |
 
 Voor invulling van de functionele architectuur requirements zijn
 meerdere (open source) oplossingen beschikbaar voor samenwerk. Er zijn
@@ -127,34 +95,17 @@ tegelijkertijd een cloud-soevereine oplossing te bieden. Deze lijst is
 niet uitputtend, maar geeft een indicatie van de mogelijkheden voor
 cloud-soevereine oplossingen.
 
-  ---------------------------------------------------------------------------------------------------------------
-
-  Product        Files   Audio         Video         Chat   Kalender   Contacten   Mail   Office          Taken
-                         conferentie   Conferentie                                        (spreadsheat,   
-                                                                                          presentaties en 
-                                                                                          text            
-                                                                                          documenten)     
-  -------------- ------- ------------- ------------- ------ ---------- ----------- ------ --------------- -------
-
-  NextCloud      X       X             X             X      X          X           X      X               X
-
-  Libreoffice                                                                             X               
-
-  Open-Xchange                                              x          x           x                      X
-
-  Jitsi meet             x             x                                                                  
-
-  Matrix                 X             X             X                                                    
-
-  OpenDesk       X                     X             X      X          X           X      X               x
-
-  LaSuite        x       x             x             X                                    x               
-
-  Mattermost                                         X                                                    
-
-  OpenOffice                                                                              X               
-  
-  ---------------------------------------------------------------------------------------------------------------
+| Product      | Files | Audio conferentie | Video Conferentie | Chat | Kalender | Contacten | Mail | Office (spreadsheat, presentaties en text documenten) | Taken |
+|--------------|-------|-------------------|-------------------|------|----------|-----------|------|-------------------------------------------------------|-------|
+| NextCloud    | X     | X                 | X                 | X    | X        | X         | X    | X                                                     | X     |
+| Libreoffice  |       |                   |                   |      |          |           |      | X                                                     |       |
+| Open-Xchange |       |                   |                   |      | x        | x         | x    |                                                       | X     |
+| Jitsi meet   |       | x                 | x                 |      |          |           |      |                                                       |       |
+| Matrix       |       | X                 | X                 | X    |          |           |      |                                                       |       |
+| OpenDesk     | X     |                   | X                 | X    | X        | X         | X    | X                                                     | x     |
+| LaSuite      | x     | x                 | x                 | X    |          |           |      | x                                                     |       |
+| Mattermost   |       |                   |                   | X    |          |           |      |                                                       |       |
+| OpenOffice   |       |                   |                   |      |          |           |      | X                                                     |       |
 
 ## Samenwerkruimte Oplossing bij Duitse en Franse overheid
 
