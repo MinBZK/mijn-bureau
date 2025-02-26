@@ -122,20 +122,30 @@ Deze Kubernetes gebruikt flux voor deployment en sops for security encryption. W
 
 We gebruiken een aantal tools om met elkaar en de omgeving te communiceren. Iedere tool heeft zijn eigen doel.
 
-Voor asynchrone communicatie gebruiken we [mattermost](https://digilab.overheid.nl/chat). Groeps chats moeten voor iedereen beschikbaar zijn tenzij er zwaarwegende redenen zijn. In Mattermost is een team genaamd mijn-bureau waar meerdere kanalen beschikbaar zijn voor discussies.
+Voor asynchrone communicatie gebruiken we [mattermost](https://digilab.overheid.nl/chat). Groeps chats moeten voor iedereen beschikbaar zijn tenzij er zwaarwegende redenen zijn. In Mattermost is een team genaamd mijn-bureau waar meerdere kanalen beschikbaar zijn voor discussies. Als we onze eigen tooling hebben die betrouwbaar genoeg is stappen we over op die tool. 
 
-Voor project management gebruiken we [github projects](https://github.com/orgs/MinBZK/projects/22). Dit project moet publiekelijk beschikbaar zijn.
+Voor project management gebruiken we [github projects](https://github.com/orgs/MinBZK/projects/22). Dit project moet publiekelijk beschikbaar zijn. Als we onze eigen tooling hebben die betrouwbaar genoeg is stappen we over op die tool
 
 Voor vastlegging gebruiken we Github Repositories onder de organisatie [MinBZK](https://github.com/orgs/MinBZK/repositories). Alle repositories die in beheer zijn van [mijn-bureau](https://github.com/orgs/MinBZK/teams/mijn-bureau/repositories) moeten publieklijk beschikbaar zijn. De repositories zijn:
 
 * [github mijn-bureau](https://github.com/MinBZK/mijn-bureau) voor documentatie.
 * [github lasuite basis](https://github.com/MinBZK/LaSuiteBasis) voor infra van basis componentent La Suite
-* [github opendesk](https://github.com/MinBZK/opendesk) voor Infra opzet van oplossing OpenDesk
+* [github opendesk](https://github.com/MinBZK/opendesk) voor infra opzet van oplossing OpenDesk
 * [github leos](https://github.com/MinBZK/leos) voor bouwen en infra van Legislation Editing Open Software (LEOS)
-* [github grist](https://github.com/MinBZK/grist) voor Infra opzet van oplossing Grist (onderdeel van LaSuite)
-* [github docs](https://github.com/MinBZK/docs) voor Infra opzet van oplossing Docs (onderdeel van LaSuite)
-* [github meet](https://github.com/MinBZK/meet) voor Infra opzet van oplossing Meet (onderdeel van LaSuite)
+* [github grist](https://github.com/MinBZK/grist) voor infra opzet van oplossing Grist (onderdeel van LaSuite)
+* [github docs](https://github.com/MinBZK/docs) voor infra opzet van oplossing Docs (onderdeel van LaSuite)
+* [github meet](https://github.com/MinBZK/meet) voor infra opzet van oplossing Meet (onderdeel van LaSuite)
+* [github ai-assistant](https://github.com/MinBZK/ai-assistant) voor infra opzet van oplossing AI assistant (onderdeel van LaSuite)
+* [github ai-webservices](https://github.com/MinBZK/ai-webservices) voor infra opzet van oplossing AI webservices (onderdeel van LaSuite)
+* [github chat](https://github.com/MinBZK/chat) voor infra opzet van oplossing Chat Meet (onderdeel van LaSuite)
+* [github keycloak-theme](https://github.com/MinBZK/keycloak-theme) voor keycloak theme (onderdeel van LaSuite)
+* [github la-suite basis](https://github.com/MinBZK/la-suite-basis) voor infra opzet van Identity provider en andere basis compontent (onderdeel van LaSuite)
+* [github mijn-bureau portal](https://github.com/MinBZK/mijn-bureau-portal) voor portal software
+* [github office](https://github.com/MinBZK/office) voor infra opzet van office (onderdeel van LaSuite)
+* [github plausible](https://github.com/MinBZK/plausible) voor infra opzet van portal analytics
+* [github vault](https://github.com/MinBZK/vault) voor infra opzet van pasword manager
 
 Voor formele communicatie wordt de Rijksoverheid email gebruikt.
 
-Voor video conferencing wordt de Rijksoverheid versie van Webex gebruikt binnen het team. Meetings buiten het team worden gehouden is de meest handig tool die beschikbaar voor de externe stakeholders.
+Voor video conferencing wordt de Rijksoverheid versie van Webex gebruikt binnen het team. Meetings buiten het team worden gehouden is de meest handig tool die beschikbaar voor de externe stakeholders. Als we onze eigen tooling hebben die betrouwbaar genoeg is stappen we over op die tool.
+ 
