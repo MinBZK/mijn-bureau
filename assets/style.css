@@ -69,3 +69,9 @@ article {
   max-width: 40rem;
   padding: 2em;
 }
+
+.markdown-body h3+p>img {
+  border: 0.5rem solid lightgrey;
+  border-top-width: 2rem;
+  border-radius: 0.5rem;
+}
