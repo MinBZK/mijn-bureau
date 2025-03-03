@@ -23,13 +23,34 @@
 
   <body>
     <nav>
-      <a id="site--logo" href="{{ site.baseurl }}">
+      <a id="site--logo" href="{{ site.baseurl }}/">
         <img src="{{ site.baseurl }}/assets/logo-kleur.png" alt="Illustratie van een bureaublad met een brief er op.">
-        <p id="site--title">{{ site.title }}</p>
       </a>
     </nav>
 
     <article class="markdown-body">{{content}}</article>
+
+    <footer class="markdown-body">
+      <ul>
+        <h4>Mijn Bureau</h4>
+        <li>Een suite met samenwerksoftware voor de overheid, publieke sector en bedrijven.</li>
+      </ul>
+
+      <ul>
+        <h4>Een project van:</h4>
+        <li><a href="https://www.rijksoverheid.nl/">Rijksoverheid</a></li>
+        <li>Ministerie van Binnenlandse Zaken en Koninkrijksrelaties</li>
+        <li><a href="https://digilab.overheid.nl/">Digilab</a></li>
+        <li><a href="https://www.amsterdam.nl/">Gemeente Amsterdam</a></li>
+        <li><a href="https://vng.nl/artikelen/vng-realisatie">VNG-Realisatie</a></li>
+      </ul>
+
+      <ul>
+        <h4>Waar en hoe we werken:</h4>
+        <li><a href="https://github.com/MinBZK/mijn-bureau">Code en documentatie</a></li>
+        <li><a href="https://github.com/orgs/MinBZK/projects/22/views/1">Project tracker</a></li>
+      </ul>
+    </footer>
   </body>
 
 </html>

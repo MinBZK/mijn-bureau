@@ -75,3 +75,27 @@ article {
   border-top-width: 2rem;
   border-radius: 0.5rem;
 }
+
+footer, header>a:link {
+  display: flex;
+  align-items: flex-start;
+  list-style-type: none;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+footer.markdown-body>*, header>a:link>* {
+  display: inline-block;
+  max-width: 15rem;
+  min-width: 7rem;
+}
+footer.markdown-body img {
+  max-width: 100%;
+}
+footer.markdown-body>ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+footer.markdown-body ul li {
+  margin-left: 0;
+}
