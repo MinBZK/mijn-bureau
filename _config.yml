@@ -1,0 +1,19 @@
+title: Mijn Bureau
+permalinks: pretty
+
+include:
+  - README.md
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - LICENSE.md
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+exclude:
+  - script
+  - Gemfile
+  - Gemfile.lock
+  - _site
+  - .bundle

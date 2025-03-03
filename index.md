@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Over Mijn Bureau
 
 Mijn Bureau is een suite met samenwerksoftware voor de overheid, publieke sector en bedrijven.
@@ -7,6 +11,14 @@ De Mijn Bureau suite wordt ontwikkeld in samenwerking tussen verschillende parti
 Samen met Frankrijk en Duitsland onderhouden we een Europese suite van samenwerksoftware. Mijn Bureau is de Nederlandse implementatie daar van.
 
 We gebruiken bewust componenten die we delen met veel en veel verschillende partijen. Zo worden de risico's gespreid en de investeringen gedeeld.
+
+Dit is een initiatief van:
+
+* [Rijksoverheid](https://www.rijksoverheid.nl/)
+* Ministerie van Binnenlandse Zaken en Koninkrijksrelaties
+* [Digilab](https://digilab.overheid.nl/)
+* [Gemeente Amsterdam](https://www.amsterdam.nl/)
+* [VNG-Realisatie](https://vng.nl/artikelen/vng-realisatie)
 
 ## Deeloplossingen
 
