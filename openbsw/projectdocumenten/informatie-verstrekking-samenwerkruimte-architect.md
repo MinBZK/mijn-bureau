@@ -20,7 +20,7 @@ toegang hebben zonder expliciete toestemming als er voor gekozen word om
 op eigen data centers te hosten. Een dergelijke aanpak voorkomt ook dat
 de data onderhevig is aan juridische regelingen van buitenlandse
 overheden, die documenten of informatie mogelijk kunnen doorsturen en
-analyseren via inlichtingendiensten
+analyseren via inlichtingendiensten.
 
 Om dit te realiseren, kan men kiezen voor open-sourceoplossingen,
 waarmee volledige controle wordt behouden over waar de applicaties
@@ -46,11 +46,11 @@ de BSW architectuur voor applicatiedienst Samenwerkruimte.
 | chat.worker.collaboration                    | Uitwisseling van rechtstreekse (persistente) korte (tekst)berichten tussen deelnemers in de samenwerkruimte.                              |
 | file engine.collaboration                    | Opslag van bestanden in de samenwerkruimte.                                                                                               |
 | version handling.collaboration               | Bijhouden van versies om gebruikerswijzigingen te traceren, verschillen te tonen en indien gewenst terug te draaien.                      |
-| representation creation.data object          | Duplicatie van een bestand richting een formele dienst voor Informatieobjectbeheer, zodat het volledig onder het regime van deze dienst   |
+| representation creation.data object          | Duplicatie van een bestand richting een formele dienst voor Informatieobjectbeheer, zodat het volledig onder het regime van deze dienst.  |
 | administration.channel.virtual.collaboration | Beheer van virtuele samenwerkkanalen.                                                                                                     |
 
 Voor invulling van de functionele architectuur requirements zijn
-meerdere (open source) oplossingen beschikbaar voor samenwerk. Er zijn
+meerdere (open source) oplossingen beschikbaar voor samenwerken. Er zijn
 producten die een totaaloplossing bieden, en er zijn producten die delen
 van de requirements kunnen invullen en zelf samengevoegd kunnen worden
 tot een totaalpakket.
