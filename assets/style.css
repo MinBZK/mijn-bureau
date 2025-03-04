@@ -1,9 +1,13 @@
 @import url("github-markdown.css");
 
 html, body {
-  background-color: #DEE6E1;
+  background-color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0;
+}
+
+*,* {
+  box-sizing: border-box;
 }
 
 body>*:not(hr) {
@@ -45,6 +49,8 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
+  text-align: center;
+  width: 100%;
 }
 
 body {
@@ -52,39 +58,47 @@ body {
 }
 
 nav {
-  background-color: white;
   max-width: 40rem;
   padding: 2em;
+  text-align: center;
 }
 
 nav>a#site--logo>img {
-  max-width: 8rem;
+  max-width: 18vh;
 }
 nav>a#site--logo>p#site--title {
   font-size: xx-large;
 }
 
 article {
-  background-color: white;
-  max-width: 40rem;
-  padding: 2em;
+  background-color: #eff2f5;
+  box-shadow: 0.1rem 0.25rem 0.5rem rgba(0, 0, 0, 0.199);
+  padding: 5rem 2rem;
+  border-radius: 0.1rem;
+}
+article>* {
+  margin: auto;
+}
+article.markdown-body h1 {
+  margin: 3rem auto;
 }
 
 .markdown-body h3+p>img {
-  border: 0.5rem solid lightgrey;
+  border: 0.5rem solid #DEE6E1;
   border-top-width: 2rem;
   border-radius: 0.5rem;
 }
 
-footer, header>a:link {
+footer {
   display: flex;
   align-items: flex-start;
   list-style-type: none;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  padding: 2rem 0;
 }
 
-footer.markdown-body>*, header>a:link>* {
+footer.markdown-body>* {
   display: inline-block;
   max-width: 15rem;
   min-width: 7rem;
