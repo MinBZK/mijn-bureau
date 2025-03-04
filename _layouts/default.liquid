@@ -1,0 +1,57 @@
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% if page.title and page.title != site.title %}{{ page.title | escape }}, {% endif %}{{ site.title | escape }}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    <link rel="stylesheet" href="{{ "/assets/style.css" | prepend: site.baseurl | prepend: site.url }}">
+
+    {% if page.redirect_to %}
+    <link rel="canonical" href="{{ page.redirect_to }}"/>
+    <meta http-equiv="refresh" content="0;url={{ page.redirect_to }}" />
+    {% else %}
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    {% endif %}
+
+    <link rel="icon" href="{{ site.baseurl }}/assets/logo-kleur.png">
+
+  </head>
+
+  <body>
+    <nav>
+      <a id="site--logo" href="{{ site.baseurl }}/">
+        <img src="{{ site.baseurl }}/assets/logo-kleur.png" alt="Illustratie van een bureaublad met een brief er op.">
+      </a>
+    </nav>
+
+    <article class="markdown-body">{{content}}</article>
+
+    <footer class="markdown-body">
+      <ul>
+        <h4>Mijn Bureau</h4>
+        <li>Een suite met samenwerksoftware voor de overheid, publieke sector en bedrijven.</li>
+      </ul>
+
+      <ul>
+        <h4>Een project van</h4>
+        <li><a href="https://www.rijksoverheid.nl/">Rijksoverheid</a></li>
+        <li>Ministerie van Binnenlandse Zaken en Koninkrijksrelaties</li>
+        <li><a href="https://digilab.overheid.nl/">Digilab</a></li>
+        <li><a href="https://www.amsterdam.nl/">Gemeente Amsterdam</a></li>
+        <li><a href="https://vng.nl/artikelen/vng-realisatie">VNG-Realisatie</a></li>
+      </ul>
+
+      <ul>
+        <h4>Meer informatie</h4>
+        <li><a href="mailto:opensource@minbzk.nl">Email: opensource@minbzk.nl</a></li>
+        <li><a href="https://github.com/MinBZK/mijn-bureau">Code en documentatie</a></li>
+        <li><a href="https://github.com/orgs/MinBZK/projects/22/views/1">Project tracker</a></li>
+      </ul>
+    </footer>
+  </body>
+
+</html>

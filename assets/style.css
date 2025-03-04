@@ -1,0 +1,115 @@
+@import url("github-markdown.css");
+
+html, body {
+  background-color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+}
+
+*,* {
+  box-sizing: border-box;
+}
+
+body>*:not(hr) {
+  box-sizing: border-box;
+  max-width: 50em;
+  margin: auto;
+}
+
+a:link, a:visited {
+  text-decoration: underline;
+  color: black;
+}
+a:link {
+  text-decoration-color: blue;
+}
+a:visited {
+  text-decoration-color: purple;
+}
+a:link[href^='#'], a:visited[href^='#'] {
+  text-decoration-color: darkgrey;
+}
+a:hover {
+  background: none;
+}
+
+@media screen {
+  p, h1, h2, h3, h4, h5, ul, pre, blockquote, .highlight {
+    max-width: 35em;
+    max-width: calc(30rem + 5em);
+  }
+}
+@media print {
+  p, ul {
+    max-width: 12cm;
+    max-width: 60vw;
+    box-sizing: border-box;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+}
+
+body {
+  padding: 1rem;
+}
+
+nav {
+  max-width: 40rem;
+  padding: 2em;
+  text-align: center;
+}
+
+nav>a#site--logo>img {
+  max-width: 18vh;
+}
+nav>a#site--logo>p#site--title {
+  font-size: xx-large;
+}
+
+article {
+  background-color: #eff2f5;
+  box-shadow: 0.1rem 0.25rem 0.5rem rgba(0, 0, 0, 0.199);
+  padding: 5rem 2rem;
+  border-radius: 0.1rem;
+}
+article>* {
+  margin: auto;
+}
+article.markdown-body h1 {
+  margin: 3rem auto;
+}
+
+.markdown-body h3+p>img {
+  border: 0.5rem solid #DEE6E1;
+  border-top-width: 2rem;
+  border-radius: 0.5rem;
+}
+
+footer {
+  display: flex;
+  align-items: flex-start;
+  list-style-type: none;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+footer.markdown-body>* {
+  display: inline-block;
+  max-width: 15rem;
+  min-width: 7rem;
+}
+footer.markdown-body img {
+  max-width: 100%;
+}
+footer.markdown-body>ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+footer.markdown-body ul li {
+  margin-left: 0;
+}
