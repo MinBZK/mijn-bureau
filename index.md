@@ -92,14 +92,12 @@ Wiki-software voor slimme samenwerking en kennisbeheer
 
 Wachtwoord beheerder voor jouw persoonlijke en zakelijke veiligheid
 
+![Screenshot van wachtwoord manager](assets/screen-wachtwoord-manager.png)
+
 ### AI Assistant
 
 ![Screenshot van ai-chat](assets/screen-ai-chat.png)
 
 Krijg ondersteuning van je eigen AI Assistant
-
-### Account
-
-![Screenshot van account](assets/screen-account.png)
 
 Beheer uw gebruikersaccounts
