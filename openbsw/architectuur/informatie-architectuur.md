@@ -1,414 +1,6 @@
-# Solution architectuur MijnBureau (DRAFT)
+# Informatiearchitectuur
 
-Dit document beschrijft de solution architectuur van MijnBureau. MijnBureau is
-een Digitale Werkomgeving voor ambtenaren samengesteld uit open-source
-componenten. De nadruk van dit systeem ligt op veiligheid,
-gebruiksvriendelijkheid, informatiehuishouding en digitale autonomie. Het
-systeem is geïnspireerd op [OpenDesk](https://opendesk.eu/en/) en
-[La-Suite](https://lasuite.numerique.gouv.fr/).
-
-## Samenvatting
-
-De architectuur is gericht op het faciliteren van een schaalbare, veilige en
-gebruiksvriendelijke digitale werkomgeving waarbij goede informatie huidhouding
-gewaarborgd wordt. Ook wordt alle relevante wet- en regelgeving meegenomen in
-deze architectuur. Denk hierbij aan de archiefwet, Wet Open Overheid, Informatie
-& cyber beveiliging regelgeving en Privacywetgeving.
-
-De architectuur sluit waar mogelijk aan bij
-[common ground](https://commonground.nl/). Common Ground is de visie die
-beschrijft hoe gemeenten hun informatievoorziening willen inrichten.
-
-MijnBureau is een toekomstgericht ecosysteem van open-source software. De
-ontwikkelstrategie richt zich voornamelijk op het hergebruiken van componenten
-uit OpenDesk en LaSuite, met enkele belangrijke aanpassingen die wij als
-cruciaal beschouwen voor de flexibiliteit. Deze aanpassingen worden aangevuld
-met specifieke onderdelen voor verbeterde integratie en zaakgericht werken. Door
-maximaal hergebruik bevorderen we de efficiënte uitvoering van MijnBureau en
-bevorderen we de samenwerking met onze partners.
-
-De aanpak voor het creëren van MijnBureau is om open source-producten samen te
-voegen tot een universeel applicatie platform. Dit betekent dat er een
-overkoepelende structuur gemaakt wordt waar open source-producten toegevoegd
-kunnen worden, en weggehaald kunnen worden. Ook moet het mogelijk zijn om te
-integreren met al bestaande componenten binnen de organisatie als deze een
-soortgelijke functie heeft zodat dubbelingen worden voorkomen. Deze integratie
-met bestaande componenten moet via generiek gestandaardiseerde
-protocollen/interfaces lopen.
-
-Bij de selectie van componenten wordt rekening gehouden met beheerbaarheid, open
-interfaces en standaarden, open-source en gebruik door partners.
-
-## Aanleiding
-
-Ministeries gebruiken eigen systemen om informatie te registreren en te
-archiveren. Uit verschillende onderzoeken blijkt dat de huidige systemen niet
-gebruiksvriendelijk zijn ingericht. Geordende vastlegging vindt pas laat plaats,
-interdepartementaal samenwerken is lastig, en bewaren en vernietigen van
-informatie gebeurt nog onvoldoende gecontroleerd. Daardoor is er kritiek op de
-transparantie van het Rijk en lukt het vaak niet om informatieverzoeken van
-burgers binnen de wettelijke termijnen af te ronden. Om dit te verhelpen hebben
-4 departementen het BSW-programma gestart. Na een rapport van AC-ICT over BSW
-heeft BSW OpenBSW gestart om te kijken naar OpenSource alternatieven voor de
-BSW-functionaliteiten.
-
-### Introductie Beter Samen Werken (BSW)
-
-Het Programma Beter Samen Werken is gestart op februari 2023 en betreft een
-programma van vier ministeries:
-
-- Financiën
-- Volksgezondheid, Welzijn en Sport (VWS)
-- Sociale Zaken en Werkgelegenheid (SZW)
-- Binnenlandse Zaken en Koninkrijksrelaties (BZK)
-
-In het programma BSW werken vier departementen samen aan het verbeteren van de
-informatiehuishouding (IHH) door het vernieuwen van de ICT-ondersteuning.
-Rijksbreed is afgesproken dat andere departementen de gerealiseerde oplossing
-later kunnen overnemen.
-
-BSW wil komen tot een voor ambtenaren duidelijk betere en gebruiksvriendelijke
-ondersteuning van het werkproces en de informatiehuishouding. Ook willen ze een
-systeem realiseren die kan voldoen aan de
-[Archiefwet](https://wetten.overheid.nl/BWBR0007376/2024-06-19) en de
-[Wet open overheid](https://wetten.overheid.nl/BWBR0045754/2025-02-12).
-
-De Doelarchitectuur van Beter Samenwerken (BSW) is het bieden van een
-toekomstgerichte en robuuste basis voor de digitale informatiehuishouding van
-overheidsorganisaties.
-
-### Introductie OpenBSW
-
-In het
-[rapport](https://www.adviescollegeicttoetsing.nl/onderzoeken/documenten/publicaties/2024/09/02/advies-beter-samen-werken)
-van Adviescollege ICT dat afgerond werd op mei 2024 werd aan BSW een aantal
-adviezen gegeven. Een aantal van deze adviezen volgende in juni 2024 tot een
-voorstel om het project Open BSW te starten als onderdeel van het BSW Programma.
-De uitvoering van OpenBSW start op 1 december 2024 met de start van de
-projectleider, op 1 januari 2025 start de eerste engineer.
-
-Het project is in toenemende mate van belang als gevolg van kamer vragen rondom
-de risico’s die verbonden zijn aan het gebruikt van Cloud en de autonomie van
-Nederland zoals de initiatiefnota
-['Wolken aan de horizon'](https://www.rijksoverheid.nl/documenten/kamerstukken/2025/01/17/kamerbrief-initiatiefnota-wolken-aan-de-horizon)
-en het kamerdebat
-[migraties van overheids-ICT naar het buitenland](https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2024A08625).
-
-Het doel van het originele openBSW voorstel van 2024 is om een Proof of Concept
-uitwerking van Beter Samen Werken (BSW) functionaliteiten in te richten die de
-autonomie van de overheid versterkt met open source. Hiervoor wordt gekeken naar
-[LaSuite](https://lasuite.numerique.gouv.fr/en),
-[OpenDesk](https://opendesk.eu/en/), [Common Ground](https://commonground.nl/)
-en een EU-initiatief. Er is een budget van 445.000 euro. Op februari 2025 is er
-een werkende uitvoering van de functionaliteiten zoals beschreven in de
-BSW-architectuur voor de samenwerkruimte.
-
-In maart 2025 worden rapporten opgeleverd aan het programma BSW met een voorstel
-om pilots te starten. Het voorstel is om geselecteerde beproefde producten
-verder te verkennen met gebruikers en te voldoen aan alle wet en regelgeving,
-accessibility eisen etc.
-
-De ontwikkelrichting voor de pilot is voornamelijk het hergebruik van OpenDesk
-en LaSuite maar met een paar significante aanpassingen. Deze aanpassingen zijn
-van cruciaal belang voor het gebruik door onze organisaties en ambtenaren. Ook
-worden de suites aangevuld met specifieke onderdelen voor integratie met
-informatiehuishoudingssystemen.
-
-Deze solution architectuur is een gevolg van het voorstel voor pilots.
-
-## Introductie architectuur
-
-Dit document beschrijft de solution architectuur voor MijnBureau. MijnBureau is
-een autonome Digitale Werkomgeving. Een groot deel van de architectuur is
-geïnspireerd op de
-[architectuur van OpenDesk](https://gitlab.opencode.de/bmi/opendesk-architekturkonzept/).
-
-### Doel van dit document
-
-Het doel is het definiëren van een oplossing voor de digitale werkomgeving met
-als uitgangspunten een autonome oplossing die voldoet aan alle wet- en
-regelgeving en schaalbaar is naar 60.000 gebruikers.
-
-Dit document is bedoeld als discussie en richtinggevend document voor alle
-stakeholders om MijnBureau te implementeren. Wij hopen dat personen of
-organisaties die impact voelen door dit systeem mee wil werken aan dit document
-en belangrijke punten willen aandragen vanuit de expertise die zij hebben.
-
-### Business doel
-
-MijnBureau heeft tot doel de ministeries en ook voor daaraan verbonden
-agentschappen, inspecties en uitvoeringsinstellingen, evenals Hoge Colleges van
-Staat, provincies en gemeenten in staat te stellen om werkprocessen van
-ambtenaren te ondersteunen die geheel of gedeeltelijk afhankelijk zijn van een
-goede informatiehuishouding, met een digitale werkomgeving. Dit willen we op een
-gestandaardiseerde en autonome manier kunnen aanbieden, zodat MijnBureau een
-belangrijke bijdrage zal leveren aan de modernisering van de
-informatiehuishouding en de digitale autonomie van de overheid. Verder willen we
-met MijnBureau de ambtenaren ondersteunen met een geavanceerd en
-toekomstbestendig werkomgeving, en deze staat zou uiterlijk op de middellange
-termijn moeten worden bereikt.
-
-#### Business principes
-
-Om MijnBureau kostenefficiënt te ontwikkelen, zijn er een aantal
-businessprincipes opgesteld die erop gericht zijn complexiteit en kosten in
-balans te brengen. Deze principes dienen als leidraad om strategische
-beslissingen te maken die zowel de effectiviteit als de financiële gezondheid
-van MijnBureau waarborgen. Door systematisch complexiteit te reduceren, kunnen
-processen worden gestroomlijnd, wat leidt tot aanzienlijke kostenbesparingen
-zonder in te boeten op kwaliteit of innovatie
-
-##### Economische efficiëntie
-
-Bij het selecteren en exploiteren van een componenten voor MijnBureau moeten
-altijd de aspecten van economische efficiëntie en andere aspecten zoals
-duurzaamheid, toegankelijkheid, etc. in acht worden genomen. Als het verwachte
-voordeel onevenredig laag is in vergelijking met de kosten, dan moeten er
-alternatieven worden gezocht.
-
-##### Beschikbaarheid, vertrouwelijkheid en integriteit
-
-Beschermingsbehoeften worden doorgaans maximaal ingesteld voor de doelen van
-beschikbaarheid, vertrouwelijkheid en integriteit, maar het toepassen van het
-maximale niveau op alles kan leiden tot onnodige inspanningen, met name met
-betrekking tot beschikbaarheid. Het bereiken van buitensporige beschikbaarheid
-vereist vaak redundante technische componenten, wat kostbaar kan zijn. Daarom is
-het cruciaal om de beschermingsdoelen grondig te bespreken en te evalueren. Als
-ononderbroken bedrijfsactiviteiten cruciaal zijn, moet een "hoog" niveau van
-beschikbaarheid worden geïmplementeerd op applicatieniveau, wat de betrokken
-kosten rechtvaardigt. Als dit niet zo is, kan gekeken worden naar lagere
-beschikbaarheid.
-
-##### Standaarden
-
-Sluit aan bij wereldwijde standaarden zonder af te wijken van vastgestelde eigen
-normen. Door gebruik te maken van gestandaardiseerde processen, interfaces en
-data-uitwisselingsformaten wordt goede samenwerking tussen partijen mogelijk,
-wat cruciaal is voor het bereiken van efficiëntie digitale werkomgeving.
-
-### Samenwerking
-
-MijnBureau wordt gecreëerd in een collaboratieve samenwerking waarbij wordt
-samengewerkt met ministeries, gemeenten, provincies, uitvoeringsorganisaties,
-collega-organisaties in andere landen en relevante open-source gemeenschappen.
-De softwarebasis is samengesteld uit bestaande open source ecosystemen.
-
-Nederland heeft in december 2024 een intentieverklaring getekend met Duitsland
-en Frankrijk, ondertekend door CIO Rijk namens de staatssecretaris van BZK, om
-de betrokkenheid en samenwerking op het gebied van autonome digitale
-werkomgeving te formaliseren met onze Franse en Duitse collega's.
-
-Ons doel is om een softwaresuite samen te stellen met een installatie laag die
-niet alleen geschikt is voor de Rijksoverheid, maar ook herbruikbaar en
-aanpasbaar is voor mede-overheden en de gehele publieke sector. Voor een
-efficiënte ontwikkeling van MijnBureau is samenwerking met ervaren partners
-cruciaal. We kijken daarbij naar de Franse en Duitse collega's, diverse eigen
-instellingen zoals gemeenten en uitvoeringsorganisaties, en organisaties zoals
-SURF die al geavanceerde componenten gebruiken die binnen MijnBureau kunnen
-worden toegepast.
-
-Verschillende overheidsorganisaties zoals SSC-ICT, DICTU en RvIHH beschikken
-over uitgebreide kennis op het gebied van beheer en informatiehuishouding, die
-we willen inzetten om te voldoen aan de geldende wet- en regelgeving en om
-bestaande processen te hergebruiken. Samen met de levendige open-source
-gemeenschap en bedrijven die open-source diensten aanbieden, kunnen we een
-voortreffelijk product creëren.
-
-#### Project structuur
-
-Het voorgestelde projectstructuur voor OpenBSW is opgesplitst in 3 niveaus:
-
-- **Strategisch niveau**
-
-  - Doel: Bepaal de strategie, visie en lange termijn doelen van het project.
-  - Leden: vertegenwoordigers van de rijksoverheid, uitvoeringsorganisaties,
-    provincies, gemeenten en belangrijke stakeholders.
-  - Verantwoordelijkheden:
-    - Beslist over de toewijzing van middelen en prioritering van projecten.
-    - Zorgt voor afstemming met politieke en financiële doelstellingen.
-    - Faciliteert een open communicatie- en besluitvormingsproces.
-
-- **Tactisch niveau**
-  - Doel: Ontwerpen van specifieke sub-componenten en bewaken van
-    projectvoortgang.
-  - Leden: Projectmanagers en solution architect
-  - Verantwoordelijkheden:
-    - Vertalen van strategische doelen naar concrete plannen en roadmaps.
-    - Toezicht houden op project control mechanismen zoals tijdslijnen en
-      budgetbewaking.
-    - Coördineren van communicatie tussen het strategische en operationele
-      niveau.
-    - Architectuur principes van MijnBureau bewaken
-- **Operationeel niveau**
-  - Doel: Implementeren en testen van projectcomponenten.
-  - Leden: Technische teams, productontwikkelaars, testers, en
-    gebruikerservaringsexperts.
-  - Verantwoordelijkheden:
-    - Implementeren van sub-componenten in het MijnBureau systeem.
-    - Zet in op continue integratie en deployment (CI/CD) voor efficiënte
-      updates.
-    - Faciliteren van feedback loops via een productbord, een architectuurbord,
-      en een gebruikerservaringsbord.
-    - Het product-, architectuur-, en gebruikerservaringsbord dienen als
-      adviesorganen die voortdurend communiceren met alle deelprojecten en
-      ondersteunen bij iteratieve verbeteringen.
-
-### Fases
-
-MijnBureau zal bestaan uit meerde componenten, voor ieder component zullen we
-fases doorlopen.
-
-- Planning – verzameling van vereisten
-- Constructie – transformatie van vereisten naar dienstverlening
-- Exploitatie – levering van diensten in overeenstemming met de toepasselijke
-  service level agreements
-
-### Architectuur principes
-
-In de dynamische wereld van softwareontwikkeling vormen architectuurprincipes de
-hoeksteen van een effectief en robuust systeemontwerp. Deze principes bieden
-richtlijnen die ervoor zorgen dat een systeem niet alleen voldoet aan de huidige
-eisen, maar ook flexibel genoeg is om toekomstige uitdagingen aan te gaan. Ze
-fungeren als een leidraad voor zowel ontwikkelaars als stakeholders, en
-bevorderen een gemeenschappelijk begrip en consistente besluitvorming tijdens de
-levenscyclus van het softwareproject.
-
-1. **Conformiteit met Wet- en Regelgeving**. Zorg ervoor dat het systeem voldoet
-   aan alle relevante wettelijke en regelgevende vereisten. Voorbeelden hiervan
-   zijn AVG, BIO2, Archiefwet en forumstandaardisatie richtlijnen.
-2. **Gebruik van standaarden**. Implementeer gevestigde marktstandaarden om
-   interoperabiliteit, beveiliging en innovatie te bevorderen. Voorbeelden
-   hiervan zijn WebDav, CalDav en OpenID Connect.
-3. **Digitale Autonomie & Leveranciersonafhankelijkheid**. Beheer en controle
-   gegevens binnen geografische en juridische grenzen en minimaliseer
-   afhankelijkheid van specifieke leveranciers of fabrikanten om flexibiliteit
-   en keuzevrijheid te behouden. Voorbeelden zijn open data formaten zoals ODF.
-   Indien mogelijk dient uitsluitend softwarecomponenten te bevatten waarvoor
-   functioneel vergelijkbare producten beschikbaar zijn.
-4. **Maximaliseer Hergebruik**. Bevorder het hergebruik van bestaande
-   componenten en technologieën om efficiëntie te verbeteren en kosten te
-   reduceren. Dit betekent dat tijdens het planning process goed gekeken moet
-   worden naar mogelijke componenten die al bestaan voordat nieuwe componenten
-   gemaakt worden. Als men iets nieuws maakt, probeer dan aan te sluiten bij
-   bestaande standaarden tijdens de implementatie.
-5. **Security by design**. Implementeer veilige configuraties en beveiliging als
-   standaarduitgangspunt binnen het systeemontwerp. Beveiliging moet in iedere
-   fase van de ontwikkeling meegenomen worden, Niet alleen in de ontwerpfase.
-6. **Gebruikersgerichte Ontwikkeling**. Betrek gebruikers in het proces om een
-   hoge bruikbaarheid en acceptatie te verzekeren. Denk hierbij aan User
-   Experience onderzoeken zoals functionele geschiktheid en SUS-scores.
-7. **Container native & Beheerbaar**. Adopteer een container-native ontwerp om
-   optimale schaalbaarheid en flexibiliteit te bereiken. Alle componenten dienen
-   beschikbaar te zijn als container-images en de implementatie moet
-   plaatsvinden op containerplatforms. Hiermee wordt niet alleen de efficiëntie
-   van de resource-allocatie verbeterd, maar ook de portabiliteit en het beheer
-   van applicaties vergemakkelijkt. Dit container-georiënteerde benadering
-   ondersteunt snelle uitrol- en updatecycli, waardoor de infrastructuur beter
-   aansluit bij dynamische zakelijke behoefte
-8. **Gebruik van open source software en open source samenwerkingsmodel**.
-   Adopteer een open source werkmethodologie om innovatie te stimuleren en
-   gemeenschapsbijdrage te bevorderen. Open source-alternatieven voor huidige
-   producten moeten worden geïdentificeerd en onderdeel worden van MijnBureau om
-   digitale autonomie strategy te versterken.
-
-## Requirements
-
-Bij het ontwikkelen van een effectieve solution-architectuur is het essentieel
-om een duidelijk beeld te hebben van de requirements, ofwel de vereisten. Deze
-vereisten fungeren als de fundamentele bouwstenen voor het ontwerp en de
-implementatie van een systeem. Ze beschrijven wat een systeem moet doen en welke
-functionaliteiten nodig zijn om aan de behoeften van de belanghebbenden te
-voldoen.
-
-### Functionele requirements
-
-Het Proof of Concept-voorstel van OpenBSW benoemt noodzakelijke
-functionaliteiten. Deze zijn als volgt:
-
-1. Tekstverwerking, spreadsheets en presentaties
-2. Chat
-3. E-mail en agenda
-4. Videobellen
-5. Delen van bestanden
-
-Verder blijkt uit de architectuur van BSW dat er nog belangrijke
-functionaliteiten moeten worden toegevoegd, met name op het gebied van
-informatie huishouding. Dit vereist de implementatie van een zaaksysteem waarin
-we de bovengenoemde functionaliteiten kunnen bundelen tot één samenhangend
-geheel.
-
-Daarnaast zijn in het Proof of Concept enkele extra functionaliteiten getest,
-gebaseerd op componenten uit OpenDesk en LaSuite. Deze hebben potentieel
-interessante functies die niet direct noodzakelijk zijn, maar die wel extra
-waarde of verbeteringen kunnen bieden en een andere manier van werken kunnen
-creëren dan nu gebruikelijk is. Deze 'nice-to-have' functionaliteiten kunnen de
-gebruikerservaring verrijken of het systeem aantrekkelijker maken voor
-gebruikers. Enkele voorbeelden zijn:
-
-- Gezamenlijke Notities
-- Spreadsheet+
-- Kennismanagement
-- Projectmanagement
-
-Het team heeft zelf ook twee extra functionaliteiten uitgetest en toegevoegd als
-potentieel interessante functies:
-
-- AI Interface: OpenWebUI
-- Wachtwoord beheer: Vaultwarden
-
-Het is essentieel dat de noodzakelijke functionaliteiten worden gerealiseerd om
-het fundament van de oplossing te verzekeren en te voldoen aan de kritieke eisen
-van het originele OpenBSW projectvoorstel. Deze basisfunctionaliteiten zijn
-onmisbaar voor het succes van het project. Tegelijkertijd biedt de implementatie
-van potentieel interessante functies een scala aan mogelijkheden om het systeem
-verder te verbeteren en de gebruikerservaring te verrijken. Door strategisch te
-investeren in deze optionele functies kan de organisatie niet alleen voldoen aan
-de huidige behoeften, maar ook anticiperen op toekomstige wensen en innovaties
-stimuleren.
-
-### Wet- en regelgeving
-
-In de hedendaagse digitale wereld is naleving van wet- en regelgeving een
-cruciaal onderdeel van IT-architectuur en -beheer. Organisaties moeten ervoor
-zorgen dat hun IT-systemen en processen in overeenstemming zijn met de geldende
-juridische verplichtingen en standaarden om zowel compliance als veiligheid te
-waarborgen. Dit zijn de belangrijkste wet- en regelgeving waaraan de
-IT-architectuur van MijnBureau aan moet voldoen.
-
-- AVG (GDPR): Privacywetgeving die de verwerking van persoonsgegevens reguleert
-- Wet Digitale Overheid: Regels voor identificatie en gegevensuitwisseling
-- BIO2: Informatie & cyber beveiliging regelgeving
-- AI-Act: AI-systemen wetgeving
-- Forum Standaardisatie: Standaarden vastgelegd
-- Archiefwet: Levenscyclus van overheidsinformatie
-- Wet Open Overheid: Transparantie wetgeving
-- Wet Digitale Overheid: Veilige, toegankelijke en betrouwbare digitale
-  communicatie
-- NIS2: Cyber beveiliging
-- NSCS: basis richtlijnen cyber security
-
-### Non-functionele requirements
-
-De onderliggende infrastructuurtechnologie moet een veilige en betrouwbare
-werking mogelijk maken. De aangeboden diensten moeten toegankelijk zijn voor
-degenen die ze nodig hebben. Storingen als gevolg van serviceonderbrekingen,
-bijvoorbeeld veroorzaakt door technische fouten, moeten worden geoptimaliseerd
-met behulp van technische middelen om de impact te minimaliseren waar dit een
-bedrijfsrisico vormt.
-
-Bij het plannen, levering en exploitatie van componenten moet de BIO2 maatregel
-worden toegepast. Verder moet MijnBureau het mogelijk maken om de verwerking van
-gevoelige persoonsgegevens en digitale geclassificeerde informatie te bewerken.
-Hiervoor moeten de wettelijk verankerde technische en organisatorische vereisten
-voor gegevensbescherming en geheimhoudingsbescherming worden geïmplementeerd.
-
-Toegankelijkheid is een belangrijk aspect van de werkplek. Iedereen moet de
-tools kunnen gebruiken ongeachte persoonlijke beperkingen. Om dit te bereiken
-willen we voldoen aan WCAG vereisten.
-
-## Architectuur
-
-### Architectuur visie
+## Architectuur visie
 
 MijnBureau is een toekomstgericht ecosysteem van open-source software, speciaal
 ontworpen om ambtenaren te ondersteunen in hun werkprocessen. Het biedt een
@@ -438,7 +30,7 @@ Dit zorgt ervoor dat er gekozen kan worden voor een aanbesteding en we
 marktwerking krijgen binnen dit segment waar door meer overheden het kunnen
 gebruiken.
 
-### Informatie architectuur
+## Informatiearchitectuur
 
 De aanpak voor het creëren van MijnBureau is om open source-producten
 (componenten) samen te voegen tot een universeel applicatie platform. Dit
@@ -500,7 +92,7 @@ in de volgende technische en beveiligingsgerelateerde vereisten
   wordt ingericht zodat de uitvoering van deze policies gecontroleerd kan
   worden.
 
-#### Formaten
+### Formaten
 
 De uitwisseling van berichten tussen mijnBureau producten moet
 gestandaardiseerde interfaces gebruiken die gebaseerd zijn op open standaarden.
@@ -510,7 +102,7 @@ Voorbeelden van transmissie protocollen zijn AMQP, GraphQL, gRPC, MQTT, OpenAPI,
 REST, SOAP. Voorbeelden van standard interface zijn HTTP, JWT, OpenDocument,
 OOXML, XML.
 
-#### Veilige data toegang
+### Veilige data toegang
 
 Gegevenstoegang moet worden beheerd met behulp van policies dat de combinatie
 van de identiteit van de aanvrager en toegangsrechten tot de gevraagde resource
@@ -529,7 +121,7 @@ regelgeving.
 Voor het bewijzen van integriteit van data kunnen asymmetrische sleutels
 gebruiken worden, alternatieven zijn checksums om de integriteit te bewijzen.
 
-#### Authenticatie standaard
+### Authenticatie standaard
 
 Binnen MijnBureau zal OpenID Connect de standaard zijn. OpenID Connect is een
 authenticatie- en autorisatie standaard gebaseerd op OAuth 2.0. OpenID Connect
@@ -540,7 +132,7 @@ Veel bedrijven gebruiken nog de SAML-standaard. Als men deze wil gebruiken moet
 er een transformatie gedaan moeten worden door een tussenlaag die OpenID connect
 kan omzetten naar SAML.
 
-#### Applicatie protocol standaarden
+### Applicatie protocol standaarden
 
 Er zijn al veel universele applicatie protocollen zodat applicaties met elkaar
 kunnen communiceren binnen een domain. De volgende zijn de standaarden binnen
@@ -588,7 +180,7 @@ in real time. This enables the integration of sophisticated multimedia
 applications in the web browser, e.g. video conferences, file transfer or data
 transmission, chat and desktop sharing.
 
-#### MijnBureau basis model
+## MijnBureau basis model
 
 Het basismodel voor MijnBureau volgt in essentie het patroon dat een gebruiker
 eerst verbindt met een portaal. Na succesvolle authenticatie laat het portaal de
@@ -606,7 +198,7 @@ en naar afzonderlijke modules te reguleren. Een algemeen API-beheersysteem moet
 de API-gateways beheren en bewaken, de daarin toe te passen beleidsregels
 afdwingen en indien nodig hun activiteiten loggen.
 
-##### Portaal
+### Portaal
 
 Het portaal is een grafische interface die een gebruiker de mogelijke
 applicaties laat zien. Ook kan een geavanceerd portaal beschikbaar komen die
@@ -618,7 +210,7 @@ Afhankelijke van hoe MijnBureau geconfigureerd is zal hieronder vallen
 gebruikers management, autorisaties, beveiliging en informatie over de status
 van het systeem.
 
-##### API Gateway
+### API Gateway
 
 Als interface tussen de open source componenten en de eindgebruikers speelt de
 API-gateway een centrale rol op het gebied van communicatie en
@@ -641,14 +233,14 @@ uitvoeren. Dit beschermt de API tegen misbruik en helpt de beschikbaarheid en
 stabiliteit van services te behouden. De API-gateway moet stateless zijn, dit
 zorgt ervoor dat het schaalbaar blijft.
 
-##### Monitoring
+### Monitoring
 
 Systeemmonitoring biedt de mogelijkheid om te zien of alle componenten goed
 werken. Het biedt de mogelijkheid om controle te hebben over het systeem door
 beheerders. Ook maakt het mogelijk om auditing en logging toe te passen en
 misbruik of fouten op te sporen.
 
-##### Componenten
+### Componenten
 
 De componenten moeten onafhankelijk van elkaar zijn, maar wel integreerbaar over
 standaard interfaces waar mogelijk. De kracht van het MijnBureau systeem is dat
@@ -665,11 +257,11 @@ graph TD
   style B fill:#85C1E9, stroke:#333, stroke-width:3px
 ```
 
-#### Functionele vereisten
+## Functionele vereisten
 
 Hieronder wordt aangegeven wat we verwachten per functioneel component
 
-##### Portal
+### Portal
 
 Het portaal is een centraal aanspreekpunt voor verschillende eindgebruikers
 
@@ -683,7 +275,7 @@ Het portaal is een centraal aanspreekpunt voor verschillende eindgebruikers
 | MBPORTAL-06 | Gebruikersinterface via de webbrowser                      | Must     |
 | MBPORTAL-07 | Documenten overzicht                                       | Should   |
 
-##### Tekstverwerking, Spreadsheets en Presentaties
+### Tekstverwerking, Spreadsheets en Presentaties
 
 Dit component bestaat uit meerdere producten en worden vaak onder de
 verzamelnaam office tools genoemd.
@@ -728,7 +320,7 @@ De eisen voor presentaties zijn
 | MBOFFICEP-04 | Grafische diagrammen tooling          | Must     |
 | MBOFFICEP-05 | Timer ondersteuning                   | Should   |
 
-##### Chat
+### Chat
 
 | ID        | Titel                                                      | vereiste |
 | --------- | ---------------------------------------------------------- | -------- |
@@ -741,7 +333,7 @@ De eisen voor presentaties zijn
 | MBCHAT-07 | Archivering                                                | Must     |
 | MBCHAT-08 | Zaakgericht werken                                         | Should   |
 
-##### E-mail en agenda
+### E-mail en agenda
 
 | ID             | Titel                                                      | vereiste |
 | -------------- | ---------------------------------------------------------- | -------- |
@@ -757,7 +349,7 @@ De eisen voor presentaties zijn
 | MBGROUPWARE-10 | Versleuteling van berichten                                | Must     |
 | MBGROUPWARE-11 | Ontvangst en lees bevestiging                              | Must     |
 
-##### Videobellen
+### Videobellen
 
 | ID         | Titel                                                      | vereiste |
 | ---------- |------------------------------------------------------------| -------- |
@@ -769,7 +361,7 @@ De eisen voor presentaties zijn
 | MBVIDEO-05 | Integratie met terminals op kantoor                        | Should   |
 | MBVIDEO-05 | Zaakgericht labelen                                        | Must     |
 
-##### Delen van bestanden
+### Delen van bestanden
 
 De opslag van bestanden in de centrale gegevensruimte
 
@@ -783,14 +375,14 @@ De opslag van bestanden in de centrale gegevensruimte
 | MBFILE-06 | Informatiehuishoudingsverstrekking               | Must     |
 | MBFILE-07 | Gestructureerde opslag van documenten            | Must     |
 
-#### Product model
+## Product model
 
 MijnBureau is opgebouwd uit open-source componenten, gecombineerd door een
 infrastructuur code laag. De infrastructuur code laag wordt open-source
 gepubliceerd en onderhouden door een core team. Iedereen mag bijdragen aan deze
 infrastructuur, maar de kwaliteit en relevantie wordt beoordeeld door het core
 team. Deze infrastructuur laag combineert alle applicaties tot een samenhangend
-geheel. De infrastructuur laag moet flexibel genoeg zijn om meerder setups van
+geheel. De infrastructuur laag moet flexibel genoeg zijn om meerdere setups van
 MijnBureau te ondersteunen. Iedere organisatie kan dan zijn eigen configuratie
 instellen voor de infrastructuur laag, zodat ze hun eigen variant creëren van
 MijnBureau. Dit kan door componenten uit en aan te zetten, maar ook door
@@ -818,7 +410,7 @@ bevestigd door een test suite, en door versiebeheer kan de bijbehorende
 informatie gevonden worden tijdens het genereren van een MijnBureau release. Dit
 zorgt ervoor dat alles traceerbaar blijft.
 
-##### Testen
+### Testen
 
 Nadat componenten geïntegreerd zijn met MijnBureau moeten er geautomatiseerde
 testen uitgevoerd worden om te bewijzen dat de interfaces en functionaliteiten
@@ -828,7 +420,7 @@ testen gedaan worden op de interfaces tussen de componenten en er moeten
 belastingtesten gedaan worden om te kijken of de componenten de belasting aan
 kan en goed schaalt.
 
-##### Container image
+### Container image
 
 MijnBureau gaat uit dat er een container-as-a-service platform gebaseerd op
 Kubernetes beschikbaar is binnen de organisatie. Alle open-source componenten
@@ -846,7 +438,7 @@ en licentie lijsten genereren. Ook kunnen was attestation vereisen van
 containers en artifacts ondertekent zodat gecontroleerd kan worden dat de
 containers rechtmatig door MijnBureau gecontroleerd is.
 
-#### Security service model
+## Security service model
 
 MijnBureau maakt gebruik van AAA-security en Zero Trust. AAA staat voor
 Authentication, Authorization and Accounting. Zero trust gaat ervan uit dat
@@ -870,7 +462,7 @@ te stelen.
 Voor machine-2-machine communicatie moeten de tokens regelmatig gerouleerd
 worden, waarbij de oude token geïnvalideerd wordt.
 
-#### Deploy model
+## Deploy model
 
 De applicatie deployment is geautomatiseerd via continuous integration /
 continuous deployment (CI/CD) pipelines. Tools, pipelines en configuratie wordt
@@ -898,7 +490,7 @@ bij MijnBureau, omdat het een restrictieve aanpak volgt waarbij geen enkele
 gebruiker of apparaat standaard vertrouwen krijgt en toegangsrechten worden
 verleend op basis van behoefte en verificatie.
 
-#### Open Source criteria
+## Open Source criteria
 
 Alle open-source componenten moeten een geaccepteerde licentie hebben, anders
 kan deze niet geïntegreerd worden. De binaire vorm van de open source
@@ -909,7 +501,7 @@ andere platformen en operating systemen beschikbaar te maken. Dit zorgt ervoor
 dat de autonomie ook verder rijk dan de processor en operating systeem van een
 leverancier.
 
-#### Accessibility
+## Accessibility
 
 Het doel van Accessibility binnen MijnBureau is dat ambtenaren met beperkingen
 gelijke toegang hebben tot MijnBureau. Hierbij refereren we aan de Web Content
@@ -942,7 +534,7 @@ gebruikerservaring en -tevredenheid door een uniform bedieningsconcept.
 Binnen de Nederlandse overheid bestaan al verschillende design systemen. Een van
 deze moeten we gaan hergebruiken.
 
-#### Agile Component Methode
+## Agile Component Methode
 
 Om componenten snel waarde te laten creëren en issues in de vereisten en wensen
 te detecteren is het van belang om componenten snel beschikbaar te maken voor
@@ -965,61 +557,8 @@ security voordat het naar alpha mag. Een risico beoordeling moet goedgekeurd
 zijn om naar beta toe te mogen. Voor productie moet er weer een risico
 beoordeling goedgekeurd zijn voor het desbetreffende component.
 
-### Technology architectuur (TODO, nog niet af)
+## Lees verder
+- [Business architectuur](business-architectuur.md)
+- [Technische architectuur](techniche-architectuur.md)
 
-Deze suite, MijnBureau, is opgebouwd uit dezelfde componenten als LaSuite en
-OpenDesk op een fit-for-purpose manier met als doel om de beste samenwerksuite
-voor ambtenaren en medewerkers te bieden. De suite is ingericht om te werken met
-de bestaande login systemen van de organisatie of systeem binnen MijnBureau.
-
-Het platform zal open-source componenten samenbrengen tot één systeem, met als
-groot verschil dat we meer flexibiliteit willen bieden aan organisaties om
-componenten te verwisselen en te integreren met hun bestaande systemen, waar dit
-realistisch is.
-
-#### Selection and Justification
-
-#### Componenten
-
-Tijdens de Proof of concept zijn veel componenten van onze partners beproeft. De
-volgende mogelijke component zijn hieruit gekomen
-
-| Function            | Functional Component |
-| ------------------- | -------------------- |
-| Chat                | Element Synapse      |
-| Notes               | Docs                 |
-| Portal              | Bureaublad           |
-| Identity management | Keycloak             |
-
-We follow an agile procedure so not all features are added yet. The following
-features are envisioned to be added
-
-| Function                                     | Functional Component                                                  | Component Version | Upstream Documentation |
-| -------------------------------------------- | --------------------------------------------------------------------- | ----------------- | ---------------------- |
-| File management                              | [Nextcloud Files](https://nextcloud.com/files/)                       |                   |                        |
-| Spreadsheet, presentation & document editing | [Collabora Online](https://www.collaboraonline.com/collabora-online/) |                   |                        |
-| Email, Agenda & Tasks                        | [OX App Suite](https://www.open-xchange.com/products/ox-app-suite)    |                   |                        |
-| Cases                                        | [OpenZaak](https://github.com/open-zaak/open-zaak)                    |                   |                        |
-| Spreadsheet & More                           | Grist                                                                 |                   |                        |
-| Video calling                                | Meet/Jitsi                                                            |                   |                        |
-| AI Assistant                                 | OpenWebUI                                                             |                   |                        |
-
-## Scalability and Performance
-
-Functionele geschiktheid • 90% van vereiste functies verwacht door gebruikers
-beschikbaar Performance efficiëntie • responstijd van gemiddelde 300ms (p95) •
-Kan 1000 verzoeken per seconden aan (+-750 Gebruikers) Compatibiliteit •
-Ondersteund laatste versie van 3 browsers (Firefox, edge & chrome)
-Gebruiksvriendelijkheid • SUS-score minimaal 75 uit gebruikers onderzoek
-Operationeel • Minder dan 5% fouten bij kritieke taken • Maximaal 30% langer dan
-benchmark • Minimaal wettelijke WCAG-score • Betrouwbaarheid (9 tot 5, exclusief
-weekend) • MTBF minimaal 1 week • MTTR minder dan 8 uur • Beschikbaarheid 98% •
-RPO
-
-- RTO • Gebruik CI/CD-pipeline voor geautomatiseerde en reproduceerbare releases
-  Beveiliging • Maximaal 2 kritieke kwetsbaarheden per release, opgelost binnen
-  72 uur. • Alle containers moeten gescande worden op kwetsbaarheden
-
-Onderhoudbaarheid • Heeft mogelijkheid tot gebruikt van open metrics, Logs en
-traces • Deployments moeten worden beheerd via declaratieve configuratie •
-Minimaal 80% testdekking • Heeft declaratieve monitoring en alerting
+Of keer terug naar de [hoofdpagina](index.md)
