@@ -6,6 +6,7 @@ Onze projectdocumentatie:
 * [Werkafspraken](werkafspraken.md): hoe we het project beheersen en ontwikkelen.
 * [Gebruiksafspraken](gebruiksafspraken.md): wat wij gebruikers bieden en de voorwaarden.
 * [Evaluatie](evaluatie.md): de bevindingen tot nu toe.
+* [Architectuur](architectuur/index.md)
 
 ## Team
 

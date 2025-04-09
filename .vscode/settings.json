@@ -1,5 +1,29 @@
 {
     "files.associations": {
         "*.yaml": "home-assistant"
-    }
+    },
+    "markdown.validate.enabled": true,
+    "cSpell.words": [
+      "ABAC",
+      "Collabora",
+      "DICTU",
+      "ITIL",
+      "MBCHAT",
+      "MBFILE",
+      "MBGROUPWARE",
+      "MBOFFICE",
+      "MBOFFICEP",
+      "MBOFFICES",
+      "MBOFFICET",
+      "MBPORTAL",
+      "MBVIDEO",
+      "MTBF",
+      "MTTR",
+      "NSCS",
+      "OOXML",
+      "SCIM",
+      "SDLC",
+      "Vaultwarden",
+      "WCAG"
+    ]
 }
