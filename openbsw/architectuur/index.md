@@ -16,7 +16,7 @@ Dit document bestaat uit 4 delen:
 ## Samenvatting
 
 De architectuur is gericht op het faciliteren van een schaalbare, veilige en
-gebruiksvriendelijke digitale werkomgeving waarbij goede informatie huidhouding
+gebruiksvriendelijke digitale werkomgeving waarbij een goede informatiehuishouding
 gewaarborgd wordt. Ook wordt alle relevante wet- en regelgeving meegenomen in
 deze architectuur. Denk hierbij aan de archiefwet, Wet Open Overheid, Informatie
 & cyber beveiliging regelgeving en Privacywetgeving.
@@ -39,7 +39,7 @@ overkoepelende structuur gemaakt wordt waar open source-producten toegevoegd
 kunnen worden, en weggehaald kunnen worden. Ook moet het mogelijk zijn om te
 integreren met al bestaande componenten binnen de organisatie als deze een
 soortgelijke functie heeft zodat dubbelingen worden voorkomen. Deze integratie
-met bestaande componenten moet via generiek gestandaardiseerde
+met bestaande componenten moet via generieke en gestandaardiseerde
 protocollen/interfaces lopen.
 
 Bij de selectie van componenten wordt rekening gehouden met beheerbaarheid, open
@@ -54,13 +54,13 @@ interdepartementaal samenwerken is lastig, en bewaren en vernietigen van
 informatie gebeurt nog onvoldoende gecontroleerd. Daardoor is er kritiek op de
 transparantie van het Rijk en lukt het vaak niet om informatieverzoeken van
 burgers binnen de wettelijke termijnen af te ronden. Om dit te verhelpen hebben
-4 departementen het BSW-programma gestart. Na een rapport van AC-ICT over BSW
-heeft BSW OpenBSW gestart om te kijken naar OpenSource alternatieven voor de
-BSW-functionaliteiten.
+4 departementen het BSW-programma gestart. Na een rapport van AcICT over BSW
+heeft BSW het deelproject OpenBSW gestart om te kijken naar open-source
+alternatieven voor de BSW-functionaliteiten.
 
 ### Introductie Beter Samen Werken (BSW)
 
-Het Programma Beter Samen Werken is gestart op februari 2023 en betreft een
+Het Programma Beter Samen Werken is gestart in februari 2023 en betreft een
 programma van vier ministeries:
 
 - Financiën
@@ -75,7 +75,7 @@ later kunnen overnemen.
 
 BSW wil komen tot een voor ambtenaren duidelijk betere en gebruiksvriendelijke
 ondersteuning van het werkproces en de informatiehuishouding. Ook willen ze een
-systeem realiseren die kan voldoen aan de
+systeem realiseren dat kan voldoen aan de
 [Archiefwet](https://wetten.overheid.nl/BWBR0007376/2024-06-19) en de
 [Wet open overheid](https://wetten.overheid.nl/BWBR0045754/2025-02-12).
 
@@ -89,9 +89,9 @@ In het
 [rapport](https://www.adviescollegeicttoetsing.nl/onderzoeken/documenten/publicaties/2024/09/02/advies-beter-samen-werken)
 van Adviescollege ICT dat afgerond werd op mei 2024 werd aan BSW een aantal
 adviezen gegeven. Een aantal van deze adviezen volgende in juni 2024 tot een
-voorstel om het project Open BSW te starten als onderdeel van het BSW Programma.
-De uitvoering van OpenBSW start op 1 december 2024 met de start van de
-projectleider, op 1 januari 2025 start de eerste engineer.
+voorstel om het project OpenBSW te starten als onderdeel van het BSW Programma.
+De uitvoering van OpenBSW startte op 1 december 2024 met de start van de
+projectleider, op 1 januari 2025 is de eerste engineer gestart.
 
 Het project is in toenemende mate van belang als gevolg van kamer vragen rondom
 de risico’s die verbonden zijn aan het gebruikt van Cloud en de autonomie van
@@ -100,9 +100,9 @@ Nederland zoals de initiatiefnota
 en het kamerdebat
 [migraties van overheid-ICT naar het buitenland](https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2024A08625).
 
-Het doel van het originele openBSW voorstel van 2024 is om een Proof of Concept
+Het doel van het originele OpenBSW voorstel van 2024 is om een Proof of Concept
 uitwerking van Beter Samen Werken (BSW) functionaliteiten in te richten die de
-autonomie van de overheid versterkt met open source. Hiervoor wordt gekeken naar
+autonomie van de overheid versterkt met open-source. Hiervoor wordt gekeken naar
 [LaSuite](https://lasuite.numerique.gouv.fr/en),
 [OpenDesk](https://opendesk.eu/en/), [Common Ground](https://commonground.nl/)
 en een EU-initiatief. Er is een budget van 445.000 euro. Op februari 2025 is er
@@ -133,7 +133,7 @@ geïnspireerd op de
 
 Het doel is het definiëren van een oplossing voor de digitale werkomgeving met
 als uitgangspunten een autonome oplossing die voldoet aan alle wet- en
-regelgeving en schaalbaar is naar 60.000 gebruikers.
+regelgeving en schaalbaar is naar in ieder geval 60.000 gebruikers.
 
 Dit document is bedoeld als discussie en richtinggevend document voor alle
 stakeholders om MijnBureau te implementeren. Wij hopen dat personen of
