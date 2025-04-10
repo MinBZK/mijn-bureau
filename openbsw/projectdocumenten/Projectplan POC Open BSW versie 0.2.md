@@ -6,7 +6,7 @@ Open BWS (Open Source), Proof of Concept.
 
 Onderdeel van Open Overheid
 
-![Logo](./assets/BSW-Logo-Werken-aan-een-Open-Overheid.png)
+![Logo](../../assets/BSW-Logo-Werken-aan-een-Open-Overheid.png)
 
 # Revisiehistorie
 
@@ -226,7 +226,7 @@ Onder opensource werken wordt verstaan: netwerkorganisatie, maximale publieke tr
 gebruiken: [🧑*‍*🏭* Kanban bord · Open BSW *📂](https://github.com/orgs/MinBZK/projects/22/views/1). Github is een online versie beheer systeem dat een integraal onderdeel is van Open Source werken. Informatie over de status binnen de repository
 (opslag) is publiekelijk toegankelijk.
 
-![Kanban](./assets/Projectplan-PoC-Kanban-bord-project-Open-BSW-github.png)
+![Kanban](../../assets/Projectplan-PoC-Kanban-bord-project-Open-BSW-github.png)
 
 ### 2.1.2 Beheer
 
@@ -357,7 +357,7 @@ Er zijn verzoeken ontvangen voor het starten van pilots. Hier wordt momenteel ac
 
 BSW Open Source Ervaringen in relatie BSW x
 
-![Planning](./assets/Projectplan-PoC-Planning-Open-BSW.png)
+![Planning](../../assets/Projectplan-PoC-Planning-Open-BSW.png)
 
 ### 4.3.1 Product breakdown en de hoofdlijnen (producten)planning met go/nogo momenten
 
@@ -413,7 +413,7 @@ Team volgt de standaard risico matrix met op de assen kans en effect.
 
 ### 5.2.2 Risicolog
 
-![Risicos](./assets/Projectplan-PoC-Belangrijkste-risicos-uit-de-risico-log.png)
+![Risicos](../../assets/Projectplan-PoC-Belangrijkste-risicos-uit-de-risico-log.png)
 
 ## 5.3 Testen
 
