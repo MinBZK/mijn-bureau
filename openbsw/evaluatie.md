@@ -55,9 +55,9 @@ LaSuite bestaat uit de componenten:
 | Tchap            | Chat                      | Matrix+element               | ?                                                               |
 | France Transfer  | File transfer             | custom java applicatie       | https://github.com/numerique-gouv/francetransfert               |
 | Webinar          | Video webinars            | BigBlueButton                | https://github.com/numerique-gouv/b3desk                        |
-| WebConf          | Video Meetings            | jitsi                        | ?                                                               |
+| WebConf          | Video Meetings            | jitsi                        | https://github.com/numerique-gouv/magnify                       |
 | Resana           | Office suite              | Interstis  (niet opensource) | ?                                                               |
-| AudioConf        | Bellen                    | ?                            | ?                                                               |
+| AudioConf        | Bellen                    | OVHcloud VoIP                | https://github.com/numerique-gouv/audioconf                     |
 | Grist            | Collaborative spreadsheet | grist                        | https://github.com/numerique-gouv/helm-charts/tree/main/charts  |
 | Docs             | Notities                  | BlocNote.js                  | https://github.com/numerique-gouv/impress                       |
 | Messaging        | MailBox & Calander        | OpenXchange                  | ?                                                               |
