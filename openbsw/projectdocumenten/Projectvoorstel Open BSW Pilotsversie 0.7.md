@@ -163,7 +163,7 @@ Om pilots te kunnen draaien is een technische omgeving nodig. Deze omgeving zal 
 
 Het project streeft naar maximaal hergebruik en samenwerken met publieke organisaties. De infrastructuur als code werkwijze maakt het mogelijk om componenten, zoals containers, geautomatiseerd te deployen, uit te voeren en te beheren. De componenten zijn open source en vrij beschikbaar, en worden op die basis geïntegreerd in Mijn Bureau.
 
-Bij wijzigingen in de onderliggende componentent proberen we samen te werken met de betrokken partijen om de wijzigingen bij hen in beheer te brengen. Wijzigingen worden vanuit het project voorgesteld aan de beheerder van het betreffende component—doorgaans via GitHub. Indien deze wijzigingen worden geaccepteerd, worden ze doorgevoerd in de broncode. Het forken van componenten probeert het project zoveel mogelijk te vermijden, aangezien dit kan leiden tot fragmentatie en extra onderhoudslast.
+Bij wijzigingen in de onderliggende componentent proberen we samen te werken met de betrokken partijen om de wijzigingen bij hen in beheer te brengen. Wijzigingen worden vanuit het project voorgesteld aan de beheerder van het betreffende component—doorgaans via GitHub. Indien deze wijzigingen worden geaccepteerd, worden ze doorgevoerd in de broncode. Mocht blijken dat essentiele wijzigingen niet worden gehonoreerd dan kan besloten worden om de repository waarin de brondcode is opgeslagen te forken. Dit betekent dat a.h.w. een kopie van de oorspronkelijk repository wordt gemaakt die we in eigen beheer verder ontwikkelen. Het forken van componenten probeert het project zoveel mogelijk te vermijden, aangezien dit kan leiden tot fragmentatie en extra onderhoudslast.
 
 Wanneer dit leidt tot essentiële besluitvorming, wordt dit voorgelegd aan de stuurgroep.
 
@@ -301,15 +301,21 @@ Het project bestaat uit:
 
 |**Rol**|**Wie**|**Taken, bevoegdheden, verantwoordelijkheden**|
 | :- | :- | :- |
-|Adviseur OS (OSPO)|Boris|Bewaker Open Source implementatie|
+|Adviseur OS (OSPO) *|Boris|Bewaker en adviseur Open Source|
 |Product Owner|Vacature|Product visie, backlog management|
 |Community lead|Rik|Faciliteren team, rol PM conform BSW|
 |Tech lead|Berry|Platform engineering, technische inrichting, begeleiden devs|
 |DevSecOps (front-end, back end,security,ops)|Eric Wout en vacature|Aanpassen modules|
-|UX|Vacature|Verzamelen eindgebruikers informatie en interactie|
-|Beleidsmedewerker DPIA|Vacature|Doorlopen van DPIA trajecten.|
+|UX **|Vacature|Verzamelen eindgebruikers informatie en interactie|
+|Beleidsmedewerker DPIA ***|Vacature|Doorlopen van DPIA trajecten.|
 |Gebruikers per pilot|Vacature|Intensief gebruik van modules en beoordelen op geschiktheid|
 |Specialist inrichten 1<sup>e</sup> lijn support|Vacature|Inrichten 1e lijn support.|
+
+\* De adviseur OS stemt af met de QA van programma en de QA zorgt dat waar nodig zaken geagendeerd worden op de stuurgroep
+
+\*\* Waar dat kan zal gebruik gemaakt worden van de kennis/expertise van de UX designers van RvIHH m.b.t. gebruikersschermen.
+
+\*\*\* Kennis/expertise zal geleverd worden vanuit het project implementatie/harmonisatie waar realiseren van DPIA’s is belegd.
 
 - Het project zal via oproepen stimuleren dat overheidsmedewerkers en overheden vrijwillig deel gaan nemen aan het project. Een andere bron zijn samenwerking met andere overheidsonderdelen.
 
