@@ -295,6 +295,8 @@ De geschatte kosten voor in totaal 4 pilots zijn 4.1M€, zijnde een optelling v
 
 - Kostenraming die gecommuniceerd is wordt verder gevalideerd en voor alsnog gebaseerd op externe inhuur.
 
+Nb. Parallel aan de pilot(s) zal worden onderzocht in hoeverre het project gebruik kan maken van Europese subsidies.
+
 # <a name="_toc192574547"></a><a name="_toc192546446"></a><a name="_toc191396230"></a>6 Projectorganisatie
 
 Het project bestaat uit:
