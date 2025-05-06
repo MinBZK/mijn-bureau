@@ -7,7 +7,7 @@ van de technische implementatie.
 
 Als basis platform voor MijnBureau wordt een
 [haven](https://haven.commonground.nl/) compliant Kubernetes distributie
-verwachte. Implementatie op andere CNCF-certified Kubernetes distributies moet
+verwacht. Implementatie op andere CNCF-certified Kubernetes distributies moet
 ook makkelijk mogelijk zijn.
 
 ## Introductie
@@ -24,13 +24,13 @@ een identity systeem uitrollen.
 
 Het platform zal open-source componenten samenbrengen tot één systeem, met als
 groot verschil ten opzichte van andere oplossingen dat het meer flexibiliteit
-bieden aan organisaties om componenten te verwisselen en te integreren met hun
+biedt aan organisaties om componenten te verwisselen en te integreren met hun
 bestaande systemen, waar dit realistisch is.
 
 ### Componenten
 
 Tijdens de Proof of concept van OpenBSW zijn veel componenten van onze partners
-beproeft. We stellen voor om agile procedure te volgen waarbij we eerst een
+beproeft. We stellen voor om een agile procedure te volgen waarbij we eerst een
 minimal viable product maken van MijnBureau met de volgende functies
 
 | Function            | Functional Component | Code                                             | Upstream Documentation                                        |
@@ -80,16 +80,16 @@ functionele eisen neergezet. Deze zijn indicatief zodat er een bepaalde
 verwachting gezet is.
 
 | non functional           | Level                                                                             |
-| ------------------------ | --------------------------------------------------------------------------------- |
+| ------------------------ |-----------------------------------------------------------------------------------|
 | Functionele geschiktheid | product voldoet aan 90% van vereiste functies die verwacht worden door gebruikers |
-| Compatibiliteit          | Ondersteund laatste versie van 3 browsers (Firefox, edge & chrome)                |
+| Compatibiliteit          | Ondersteunt laatste versie van 3 browsers (Firefox, edge & chrome)                |
 | Gebruiksvriendelijkheid  | SUS-score minimaal 75 uit gebruikers onderzoek                                    |
 | Gebruiksvriendelijkheid  | Minder dan 5% fouten bij kritieke taken                                           |
 | Gebruiksvriendelijkheid  | Maximaal 30% langer dan benchmark                                                 |
 | Gebruiksvriendelijkheid  | Minimaal wettelijke WCAG-score                                                    |
 | Beveiliging              | Maximaal 5 kritieke kwetsbaarheden per release                                    |
 | Onderhoudbaarheid        | Minimaal 80% testdekking                                                          |
-| Onderhoudbaarheid        | Heeft mogelijkheid tot gebruikt van open metrics, Logs en traces                  |
+| Onderhoudbaarheid        | Heeft mogelijkheid tot gebruik van open metrics, logs en traces                   |
 
 ## Deployment
 
@@ -104,7 +104,7 @@ gecontroleerd. De installatie stap kan handmatig gebeuren maar het moet ook
 mogelijk om om dit op een GitOPS manier te doen met tools zoals flux of ArgoCD.
 
 Als onderlaag wordt een haven compliant Kubernetes cluster verwacht. Voor nu
-gaan we ervan uit dat mensen deze kunnen afnemen van leveranciers.
+gaan we ervan uit dat deze kunnen worden afgenomen van leveranciers.
 
 Alle services waarvoor voldoende reken-, opslag- en netwerkbronnen beschikbaar
 zijn, MOETEN automatisch kunnen worden gestart als MijnBureau geïnstalleerd of
@@ -125,7 +125,7 @@ er dan rekening mee dat de volgende vereisten nodig zijn voor MijnBureau:
 MijnBureau gebruikt veel verschillende technologieën zoals caching, databases,
 object storage, AI modellen, transactionele email & Queues. Deze kunnen deployed
 worden als service bij een provider, maar mijnBureau kan ook zelf deze
-componenten deployed. Als MijnBureau zelf de componenten uitrolt moet dit
+componenten deployen. Als MijnBureau zelf de componenten uitrolt moet dit
 mogelijk zijn zonder operators te gebruiken voor de componenten zodat het
 mogelijk is om MijnBureau uit te rollen zonder admin rechten op het hele
 cluster.
@@ -133,9 +133,9 @@ cluster.
 ## Operations
 
 De operations en development van een applicatie beschrijven hoe een applicatie
-van source code naar operation wordt gebracht. er zijn 8 fases:
+van source code naar operation wordt gebracht. Er zijn 8 fases:
 
-1. Planning: beschrijving van functie van de toepassing
+1. planning: beschrijving van functie van de toepassing
 2. programmeren: maken van code voor programma en lokaal testen
 3. bouwen: Opbouwen van artefacten en automatisch testen
 4. test: verdere accessability en integratie testen.
@@ -150,34 +150,34 @@ product.
 
 Gezien het grote aantal componenten en de daaruit voortvloeiende mogelijke
 combinaties, is automatisering essentieel, zowel wat betreft de snelheid van het
-implementatieproces als de betrouwbaarheid. Alleen geautomatiseerde installaties
+implementatieproces, als de betrouwbaarheid. Alleen geautomatiseerde installaties
 kunnen worden gereproduceerd en herhaald. Om goed te meten hoe de software
-delivery van MIjnBureau gaat worden DORA metrics bijgehouden voor MijnBureau in
+delivery van MijnBureau gaat, worden DORA metrics bijgehouden voor MijnBureau in
 de omgevingen.
 
 Zelfs complexe technologieën moeten snel en betrouwbaar kunnen worden
-geïmplementeerd, ongeacht de operator. Er wordt gebruikgemaakt van gevestigde
-standaardtechnologieën. Veilige beheer MOET eenvoudig mogelijk zijn. Security bu
-default MOET makkelijk mogelijk zijn
+geïmplementeerd, ongeacht de operator. Er wordt gebruik gemaakt van gevestigde
+standaardtechnologieën. Veilig beheer MOET eenvoudig mogelijk zijn. Security by
+default MOET makkelijk mogelijk zijn.
 
 Om een hoge kwaliteit te waarborgen hebben we voor het development en operations
-team een aantal non functionele eisen neergezet. Deze zijn indicatief zodat er
+team een aantal non-functionele eisen neergezet. Deze zijn indicatief zodat er
 een bepaalde verwachting gezet is. Iedere operator is natuurlijk vrij om zijn
-eigen SLA af te spreken met zijn afnemen. Wij hebben voor nu de volgende
+eigen SLA af te spreken met zijn afnemers. Wij hebben voor nu de volgende
 gekozen.
 
-| non functional                      | Level                                                    |
-| ----------------------------------- | -------------------------------------------------------- |
-| beschikbaar Performance efficiëntie | responstijd van gemiddelde 300ms (p95)                   |
-| Performance                         | Kan 1000 verzoeken per seconden                          |
-| Betrouwbaarheid                     | support (9 tot 5, exclusief weekend)                     |
-| Betrouwbaarheid                     | MTBF 1 week                                              |
-| Betrouwbaarheid                     | MTTR 8 uur                                               |
-| Betrouwbaarheid                     | Beschikbaarheid 98%                                      |
-| Betrouwbaarheid                     | RPO 4 uur                                                |
-| Betrouwbaarheid                     | RTO 8 uur                                                |
+| non functional                      | Level                                                  |
+| ----------------------------------- | ------------------------------------------------------ |
+| beschikbaar Performance efficiëntie | responstijd van gemiddelde 300ms (p95)                 |
+| Performance                         | Kan 1000 verzoeken per seconde                         |
+| Betrouwbaarheid                     | support (9 tot 5, exclusief weekend)                   |
+| Betrouwbaarheid                     | MTBF 1 week                                            |
+| Betrouwbaarheid                     | MTTR 8 uur                                             |
+| Betrouwbaarheid                     | Beschikbaarheid 98%                                    |
+| Betrouwbaarheid                     | RPO 4 uur                                              |
+| Betrouwbaarheid                     | RTO 8 uur                                              |
 | Beveiliging                         | Alle containers moeten gescande worden op kwetsbaarheden |
-| Onderhoudbaarheid                   | Heeft declaratieve monitoring en alerting                |
+| Onderhoudbaarheid                   | Heeft declaratieve monitoring en alerting              |
 
 Voor observability doeleinde moeten dashboards gemaakt worden die voldoende
 informatie geven over de suite.
@@ -191,13 +191,13 @@ overheidsorganisaties te kunnen draaien en kan via verschillende infrastructure
 as code mogelijkheden geïnstalleerd worden. Dit kunnen HelmCharts zijn maar zou
 ook door middel van CDK8S kunnen gebeuren.
 
-Alle infrastructure as code (IaC) MOET geversiond en signed zijn zodat
+Alle infrastructure as code (IaC) MOET versioned en signed zijn zodat
 gevalideerd kan worden dat het de correcte IaC is.
 
-De containers zouden ontwikkelde kunnen zijn volgens de
+De containers zouden ontwikkeld kunnen zijn volgens de
 [Twelve-Factor APP](https://12factor.net/). Alleen 1 process zou moeten bestaan
 in een container en er zouden geen additionele applicaties beschikbaar moeten
-zijn binnen de container. Idealiter word een statisch binair bestand gebruikt
+zijn binnen de container. Idealiter wordt een statisch binair bestand gebruikt
 als applicatie in een container. Een minimale omgeving is ook toegestaan, maar
 probeer deze wel te minimaliseren.
 
@@ -210,15 +210,15 @@ door een configurable infrastructure as code systeem en kan deze geautomatiseerd
 geïnstalleerd en geüpdate worden, maar ook goed geversioned. Het moet in de
 configuratie mogelijk zijn om applicaties aan of uit te zetten, maar ook om
 alternatieve applicaties mee te geven die al beschikbaar zijn binnen de
-organisatie die dezelfde gestandaardiseerde interface supported als de originele
-tool.
+organisatie die dezelfde gestandaardiseerde interface ondersteund als de
+originele tool.
 
-Een applicatie moet volledig beschikbaar zijn naar installatie. Dit betekend dat
+Een applicatie moet volledig beschikbaar zijn naar installatie. Dit betekent dat
 ook het netwerk zoals ingress, services en load balancer, maar ook certificaten
 en storage geregeld moet worden door de infrastructure as code implementatie.
 
 Ook moet er in de Infrastructure as code effort zitten in de security, dit
-betekend dat er vanuit gegaan moet worden dat er een deny all network policy is,
+betekent dat er vanuit gegaan moet worden dat er een deny all network policy is,
 en dat alle componenten expliciet toegang tot elkaar moeten krijgen. Verder moet
 er continue gescand worden of de infrastructure as code security best practices
 handhaaft zodat het risico op security incidenten laag blijft. Er zijn vele
@@ -227,12 +227,12 @@ scanning tool ze prefereren.
 
 Verder moet de IaC getest worden met een tool zoals
 [conftest](https://www.conftest.dev/) of soortgelijk om aan te tonen dat de
-correcte manifesten gegenereerd wordt en er voldaan kan worden aan security
+correcte manifesten gegenereerd worden en er voldaan kan worden aan security
 policies.
 
 Alle artefacten zoals container images zijn opgeslagen in een repository die
-publiekelijke beschikbaar. Iedere week moeten en security checks gedaan worden
-op deze artefacten.
+publiekelijke beschikbaar is. Iedere week moeten en security checks gedaan
+worden op deze artefacten.
 
 ## uitrol van suite
 
@@ -241,12 +241,12 @@ containers een software bill of material gemaakt. Dit kan in het SPDC of
 CyclonDX formaat. De SBOM moet gesigned zijn.
 
 Het uitrol process MOET volledig geautomatiseerd mogelijk zijn door middel van
-gitops. Ook moet een rollback mogelijk zijn. de rollout wordt door een service
+gitops. Ook moet een rollback mogelijk zijn. De rollout wordt door een service
 provider gedaan.
 
 DataStorage kan gedaan worden door Kubernetes, maar het product moet flexibel
 genoeg zijn om externe DataStorage te gebruiken. Een voorbeeld hiervan is een
-Database As A service. Als de keuze gemaakt wordt om een Kubernetes externe
+Database as a Service. Als de keuze gemaakt wordt om een Kubernetes externe
 service af te nemen moet een platform team ervoor zorgen dat deze resources
 beschikbaar zijn en goed geconfigureerd voordat de suite uitgerold kan worden.
 Bij de suite wordt er vanuit gegaan dat alle externe services goed
@@ -254,7 +254,7 @@ geconfigureerd zijn.
 
 ## Security
 
-Een groot deel van MijnBureau bestaat uit het Infra code en het uitrollen van
+Een groot deel van MijnBureau bestaat uit infra code en het uitrollen van
 containers. Hieronder zijn een aantal zaken waar rekening mee gehouden moet
 worden voor security.
 
@@ -300,10 +300,10 @@ Wij raden de volgende maatregelen aan:
 
 1. Een penetration test moet gedaan worden na de installatie
 2. Git Signatures worden gecontroleerd bij de rollout
-3. configuratie wordt vastgelegd in een auditable git systeem
-4. Infra code word gescand op kwetsbaarheden
-5. patches worden snel uitgevoerd zonder service interrupties
-6. Het cluster is geaudit volgens standaarden.
+3. Configuratie wordt vastgelegd in een auditable git systeem
+4. Infra code wordt gescand op kwetsbaarheden
+5. Patches worden snel uitgevoerd zonder service interrupties
+6. Het cluster is geaudit volgens standaarden
 7. Audit logs worden buiten het cluster opgeslagen
 8. Tijdens het draaien van de applicatie worden de configuratie en applicaties
    gescand. Het resultaat wordt gelogd en waar nodig alerts gegenereerd.
@@ -311,7 +311,8 @@ Wij raden de volgende maatregelen aan:
    analyze.
 10. Web Application Filters moeten toegepast worden op alle access points van
     MijnBureau
-11. BackUp en Restore systeem moet opgezet worden
+11. BackUp en Restore systeem moet opgezet worden, inclusief disaster recovery
+    plan
 12. Rate Limiting
 
 ## Lees verder
