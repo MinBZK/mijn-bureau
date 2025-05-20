@@ -33,8 +33,9 @@ PublicCode.yml standaard:
 
 Mijn Bureau is een integratielaag met als doel een breed bruikbaar
 samenwerkplatform uit te rollen. Dit kunnen we niet alleen, we zoeken
-nadrukkelijk een brede samenwerking op. Deze samenwerking kan veel vormen hebben
-zoals;
+nadrukkelijk een brede samenwerking op.
+
+Deze samenwerking kan veel vormen hebben zoals:
 
 - Tijd investeren. Meedenken, mee ontwikkelen, etc. via
   [open source werken](CONTRIBUTING.md) of andere methode.
@@ -42,6 +43,16 @@ zoals;
   opdoen en verbeteringen kunnen doorvoeren.
 - Resources ter beschikking stellen
 - etc...
+
+Binnen dit project hanteren we hiervoor een [gedragscode](CODE_OF_CONDUCT.md)
+
+### Wat is het bestuurlijke model van dit project?
+
+Zie [Bestuur van Mijn Bureau](GOVERNANCE.md)
+
+### Wat is het beveiligingsbeleid?
+
+Zie [Beveiligingsbeleid](SECURITY.md)
 
 ### Hoe verhoudt Mijn Bureau zich tot omliggende projecten?
 
