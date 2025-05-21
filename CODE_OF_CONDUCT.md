@@ -59,7 +59,9 @@ vertegenwoordiger bij een online of offline evenement.
 
 Gevallen van beledigend, intimiderend of anderszins onacceptabel gedrag kunnen
 worden gemeld aan de communityleiders die verantwoordelijk zijn voor de
-handhaving. Alle klachten zullen snel en eerlijk worden beoordeeld en
+handhaving.
+Dit kan met een email naar <opensource@minbzk.nl>.
+Alle klachten zullen snel en eerlijk worden beoordeeld en
 onderzocht.
 
 Alle communityleiders zijn verplicht de privacy en veiligheid van de melder van

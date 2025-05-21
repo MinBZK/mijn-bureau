@@ -79,7 +79,7 @@ Het Mijn Bureau project is verantwoordelijk voor het
 
 #### Implementaties
 
-Implemanties zijn de installatie van Mijn Bureau in een zelfstandige omgeving.
+Implementaties zijn de installatie van Mijn Bureau in een zelfstandige omgeving.
 Hiervoor moeten de volgende zaken gedaan worden:
 * De configuratie op basis van Mijn Bureau incl. keuze componenten,
 * Verzorgen technisch beheer:

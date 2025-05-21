@@ -26,14 +26,14 @@ u zich aan deze code houdt. Meld onacceptabel gedrag aan de beheerders.
 ## Ik heb een vraag
 
 Voordat u een vraag stelt, kunt u het beste zoeken naar bestaande
-_[Issues](../../issues/)_ die u kunnen helpen. Mocht u een geschikt _issue_
+_[Issues](https://github.com/MinBZK/mijn-bureau/issues)_ die u kunnen helpen. Mocht u een geschikt _issue_
 hebben gevonden en nog steeds verduidelijking nodig hebben, dan kunt u uw vraag
 bij dit _issue_ stellen.
 
 Mocht u dan toch nog geen vraag willen stellen en verduidelijking nodig hebben,
 dan raden we het volgende aan:
 
-- Open een _[Issue](../../issues/new)_.
+- Open een _[Issue](https://github.com/MinBZK/mijn-bureau/issues/new)_.
 - Geef zoveel mogelijke context over waar u tegenaan loopt.
 
 We zullen het _issue_ dan zo snel mogelijk aanpakken.
@@ -53,7 +53,7 @@ te lossen.
 - Zorg ervoor dat u de nieuwste versie gebruikt.
 - Om te zien van andere gebruikers hetzelfde probleem als u hebben ervaren (en
   mogelijk al hebt opgelost), controleer of er al een bugmelding bestaat voor uw
-  bug of fout in de _[bugtracker](../..//issues?q=label%3Abug)_.
+  bug of fout in de _[bugtracker](https://github.com/MinBZK/mijn-bureau/issues?q=label%3Abug)_.
 - Verzamel informatie over de bug
 - Eventueel uw invoer en de uitvoer
 
@@ -67,7 +67,7 @@ te lossen.
 We gebruiken GitHub-_issues_ om bugs en fouten te beheren. Als u een probleem
 met project ervaart:
 
-- Open een _[Issue](../../issues/new)_. (Omdat we op dit moment nog niet zeker
+- Open een _[Issue](https://github.com/MinBZK/mijn-bureau/issues/new)_. (Omdat we op dit moment nog niet zeker
   weten of het een bug is of niet, vragen we u om nog niet over een bug te
   praten en het probleem niet te labelen.)
 - Leg uit welk gedrag u zou verwachten en wat het feitelijk gedrag is.
@@ -110,7 +110,7 @@ _community_ om uw suggestie te begrijpen en gerelateerde suggesties te vinden.
 #### Hoe dien ik een goede suggestie voor verbetering in?
 
 Suggesties voor verbetering worden bijgehouden als
-_[GitHub issues](../../issues)_.
+_[GitHub issues](https://github.com/MinBZK/mijn-bureau/issues)_.
 
 - Gebruik een **duidelijke en beschrijvende titel** voor het _issue_ om de
   suggestie te identificeren.

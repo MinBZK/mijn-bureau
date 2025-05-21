@@ -19,10 +19,6 @@ De Mijn Bureau-community houdt zich aan de volgende principes:
 De beheerders van Mijn Bureau hebben twee stuurgroepen: de technische stuurgroep
 en de productstuurgroep.
 
-Door middel van codebase-beheer ondersteunt de _Foundation for Public Code_ het
-bestuur van Mijn Bureau, de product- en technische stuurgroepen en de
-_community_.
-
 ## Technische stuurgroep
 
 De leden van de technische stuurgroep van Mijn Bureau zijn actieve bijdragers
@@ -33,13 +29,13 @@ die dagelijks verantwoordelijk zijn voor:
 - Het toezicht houden op de oplossing en openbaarmaking van
   beveiligingsproblemen
 
-Als de leden van het technisch stuurteam niet informeel tot overeenstemming
+Als de leden van het technische stuurgroep niet informeel tot overeenstemming
 kunnen komen, dient de betreffende kwestie te worden doorgestuurd naar de
-vergadering van de technisch stuurgroep.
+vergadering van de technische stuurgroep.
 
 Elk actief lid van de _community_ kan een verzoek indienen om lid te worden van
-het technisch stuurteam door dit aan het technisch stuurteam te vragen. Het
-technisch stuurteam stemt hierover (eenvoudige meerderheid).
+de technische stuurgroep door dit aan de technische stuurgroep te vragen. De
+technische stuurgroep stemt hierover (eenvoudige meerderheid).
 
 De huidige teamleden zijn (in alfabetische volgorde):
 
@@ -55,13 +51,13 @@ De technische stuurgroep is gezamenlijk verantwoordelijk voor:
 - Het beheren en plannen van _releases_
 - Het beheren van rechten op Mijn Bureau-assets, zoals _code repositories_
 
-Het technisch stuurteam komt regelmatig bijeen. Hun agenda omvat het evalueren
+De technische stuurgroep komt regelmatig bijeen. Hun agenda omvat het evalueren
 van de technische _roadmap_ en _issues_ die vastlopen. De agenda is niet bedoeld
 om alle _patches_ te beoordelen of goed te keuren. Dit gebeurt voornamelijk via
 het proces beschreven in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Als meer dan één lid van de technische stuurgroep het niet eens is met een
-beslissing van het technisch stuurteam, kunnen ze in beroep gaan bij de
+beslissing van de technische stuurgroep, kunnen ze in beroep gaan bij de
 productstuurgroep, dat de uiteindelijke beslissing neemt.
 
 Idealiter zal niet één bedrijf of organisatie een eenvoudige meerderheid van de
