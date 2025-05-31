@@ -22,7 +22,7 @@ PublicCode.yml standaard:
   die werkt of de repository is leeg.
 - In ontwikkeling (`development`) - Er is software ontwikkeld welke nog niet
   klaar is voor de eindgebruiker, ook nog niet om uit te proberen.
-- Proef (`beta`) - De software is in een The software is in een beproevingsfase.
+- Proef (`beta`) - De software is in een beproevingsfase.
 - Stabiel (`stable`) - De software is in productie en kan als dienst worden
   aangeboden.
 - Verouderd (`obsolete`) - De software word niet meer onderhouden.
@@ -62,7 +62,7 @@ Zie [Beveiligingsbeleid](SECURITY.md)
 
 Mijn Bureau integreert een reeks van uitwisselbare projecten om tot een
 samenwerkomgeving te komen. Dit zijn bestaande of nieuwe (open) _communities_,
-van binnen of buiten de overheid zijn. Zij leveren een product in de vorm van
+van binnen of buiten de overheid. Zij leveren een product in de vorm van
 een container image of plug-in. Deze moet voldoen aan [richtlijnen voor producten
 in Mijn Bureau](openbsw/architectuur/index.md).
 
