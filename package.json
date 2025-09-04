@@ -9,6 +9,6 @@
   "author": "MinBZK/mijn-bureau",
   "license": "EUPL-1.2",
   "devDependencies": {
-    "prettier": "^3.5.3"
+    "prettier": "^3.6.2"
   }
 }
