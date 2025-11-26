@@ -40,7 +40,7 @@ technische stuurgroep stemt hierover (eenvoudige meerderheid).
 De huidige teamleden zijn (in alfabetische volgorde):
 
 - Berry den Hartog
-- Eric Wout van der Steen
+- Christopher Spelt
 
 De technische stuurgroep is gezamenlijk verantwoordelijk voor:
 
