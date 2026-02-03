@@ -6,16 +6,16 @@ layout: default
 
 Mijn Bureau is een suite met samenwerksoftware voor de overheid, publieke sector en bedrijven.
 
-De Mijn Bureau suite wordt ontwikkeld in samenwerking tussen verschillende partijen in Nederland onder regie van het Open source project van het Rijksbrede programma Beter Samen Werken: OpenBSW. De focus van dat project is op betere samenwerksoftware voor de Rijksoverheid. Dat waar maken is iets wat we echter niet alleen willen en kunnen. Daarom zoeken we actief de samenwerking met andere overheden, organisaties, bedrijven en ontwikkelaars.
+De Mijn Bureau suite wordt ontwikkeld in samenwerking tussen verschillende partijen in Nederland onder regie van het Open source project van het Rijksbrede programma Beter Samen Werken: OpenBSW. De focus van dat project is op betere samenwerksoftware voor de Rijksoverheid. Dat waarmaken kunnen en willen we echter niet alleen. Daarom zoeken we actief de samenwerking met andere overheden, organisaties, bedrijven en ontwikkelaars.
 
-Samen met Frankrijk en Duitsland onderhouden we een Europese suite van samenwerksoftware. Mijn Bureau is de Nederlandse implementatie daar van.
+Samen met Frankrijk en Duitsland onderhouden we een Europese suite van samenwerksoftware. Mijn Bureau is de Nederlandse implementatie daarvan.
 
-We gebruiken bewust componenten die we delen met veel en veel verschillende partijen. Zo worden de risico's gespreid en de investeringen gedeeld.
+We gebruiken bewust componenten die we met veel verschillende partijen delen. Zo spreiden we de risico’s en delen we de investeringen.
 
-Dit is een initiatief van:
+Mijn Bureau is een initiatief van:
 
 * [Rijksoverheid](https://www.rijksoverheid.nl/)
-* Ministerie van Binnenlandse Zaken en Koninkrijksrelaties
+* [Ministerie van Binnenlandse Zaken en Koninkrijksrelaties](https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties)
 * [Digilab](https://digilab.overheid.nl/)
 * [Gemeente Amsterdam](https://www.amsterdam.nl/)
 * [VNG-Realisatie](https://vng.nl/artikelen/vng-realisatie)
