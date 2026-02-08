@@ -1,25 +1,24 @@
 # Mijn Bureau project repository
 
 Met [Mijn Bureau](index.md) onderzoeken we open source kantoorsoftware voor,
-door en met overheden.
+door en mét overheden.
 
-Mijn Bureau is een samenwerking van de Rijksoverheid, Gemeente Amsterdam en de
-Vereniging Nederlandse Gemeenten.
+Mijn Bureau is een samenwerking van de [Rijksoverheid](https://www.rijksoverheid.nl/), [Gemeente Amsterdam](https://www.amsterdam.nl/) en de
+[Vereniging van Nederlandse Gemeenten](https://vng.nl/).
 
 Vanuit de Rijksoverheid werkt het projectteam van Open BSW van het programma
-Beter Samen Werken aan Mijn Bureau. Zij documenteren hun werkwijze, proces en
+"Beter Samen Werken aan Mijn Bureau". Zij documenteren hun werkwijze, proces en
 geleerde lessen in deze repository in de [map openbsw](openbsw/index.md).
 
 [Wat is Mijn Bureau?](index.md)
 
-## Lifecycle fases voor broncode
+## Lifecycle-fases voor broncode
 
-Om onderscheid te maken tussen de broncode van de componenten en in welke mate
-ze bruikbaar zijn merken we de code aan met de lifecycle phases uit de
+Om onderscheid te maken tussen de broncode van de componenten en de mate van bruikbaarheid, merken we de code aan met de lifecycle phases uit de
 PublicCode.yml standaard:
 
-- Concept (`concept`) - De software is een “concept”. Er is geen code ontwikkeld
-  die werkt of de repository is leeg.
+- Concept (`concept`) - De software is een "concept". Er is geen code ontwikkeld
+  die werkt óf de repository is leeg.
 - In ontwikkeling (`development`) - Er is software ontwikkeld welke nog niet
   klaar is voor de eindgebruiker, ook nog niet om uit te proberen.
 - Proef (`beta`) - De software is in een beproevingsfase.
@@ -37,12 +36,12 @@ nadrukkelijk een brede samenwerking op.
 
 Deze samenwerking kan veel vormen hebben zoals:
 
-- Tijd investeren. Meedenken, mee ontwikkelen, etc. via
+- Tijd investeren. Meedenken, mee-ontwikkelen, etc. via
   [open source werken](CONTRIBUTING.md) of andere methode.
 - Repliceren binnen eigen organisatie, zodat we hier ervaringen uit kunnen
   opdoen en verbeteringen kunnen doorvoeren.
 - Resources ter beschikking stellen
-- etc...
+- Etc...
 
 Binnen dit project hanteren we hiervoor een [gedragscode](CODE_OF_CONDUCT.md)
 
@@ -63,13 +62,13 @@ Zie [Beveiligingsbeleid](SECURITY.md)
 Mijn Bureau integreert een reeks van uitwisselbare projecten om tot een
 samenwerkomgeving te komen. Dit zijn bestaande of nieuwe (open) _communities_,
 van binnen of buiten de overheid. Zij leveren een product in de vorm van
-een container image of plug-in. Deze moet voldoen aan [richtlijnen voor producten
+een container-image of plug-in. Deze moet voldoen aan [richtlijnen voor producten
 in Mijn Bureau](openbsw/architectuur/index.md).
 
 #### Mijn Bureau project
 
 Het Mijn Bureau project is verantwoordelijk voor het
-* opzetten en onderhouden van de infrastructuur configuratie,
+* opzetten en onderhouden van de infrastructuur-configuratie,
 * integreren van producten van upstream communities,
 * actueel houden en code- en versie-beheer van deze integraties, 
 * _security scanning_ op _deliverables_,
@@ -81,7 +80,7 @@ Het Mijn Bureau project is verantwoordelijk voor het
 
 Implementaties zijn de installatie van Mijn Bureau in een zelfstandige omgeving.
 Hiervoor moeten de volgende zaken gedaan worden:
-* De configuratie op basis van Mijn Bureau incl. keuze componenten,
+* De configuratie op basis van Mijn Bureau inclusief keuze-componenten,
 * Verzorgen technisch beheer:
   * Incidenten
   * Monitoring
